@@ -5,7 +5,21 @@
  All the right is reserved to the author of this project.
  ******************************************************************************/
 
-/** A type-alias for the space character */
+/** A type-alias for the {@link Boolean} <b>true</b> as a {@link String} */
+export type TrueString = "true"
+/** A type-alias for the {@link Boolean} <b>false</b> as a {@link String} */
+export type FalseString = "false"
+
+/** A type-alias for the {@link Number} <b>-1</b> as a {@link String} */
+export type MinusOneString = "-1"
+/** A type-alias for the {@link Number} <b>0</b> as a {@link String Character} */
+export type ZeroString = '0'
+/** A type-alias for the {@link Number} <b>1</b> as a {@link String Character} */
+export type OneString = '1'
+/** A type-alias for the {@link Number} <b>2</b> as a {@link String Character} */
+export type TwoString = '2'
+
+/** A type-alias for the "space" {@link String character} */
 export type Space = ' '
 /** A type-alias for the "tabulation" (\t) {@link String character} */
 export type Tabulation = '\t'
