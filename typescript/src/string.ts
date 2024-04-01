@@ -6,7 +6,7 @@
  ******************************************************************************/
 
 /** A type-alias for a {@link String} as a primitive or an object */
-export type PossibleString<T extends string = string, > = | T | String
+export type StringOrObject<T extends string = string, > = | T | String
 
 /**
  * The possible hint received from javascript interpolation & conversion
