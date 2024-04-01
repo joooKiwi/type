@@ -59,6 +59,7 @@
   "author": "JóôòKiwi",
   "license": "MIT",
   "devDependencies": {
+    "del-cli": "^5.1.0",
     "typescript": "^5.4.2"
   }
 }
