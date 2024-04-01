@@ -31,3 +31,29 @@ export type PossiblePrimitiveHint = "string" | "number" | "default"
  */
 export type PossibleEdgeCaseNumericName = | "NaN" | "Infinity" | "-Infinity"
 
+/**
+ *
+ *
+ * @see PossibleTypescriptSymbolName
+ */
+export type PossibleJavascriptSymbolName = | "asyncIterator" | "iterator"
+                                           | "hasInstance" | "isConcatSpreadable"
+                                           | "match" | "matchAll"
+                                           | "replace" | "search" | "split"
+                                           | "species"
+                                           | "toPrimitive" | "toStringTag"
+                                           | "unscopables"
+
+/**
+ *
+ *
+ * @see PossibleJavascriptSymbolName
+ */
+export type PossibleTypescriptSymbolName = | "asyncIterator" | "iterator"
+                                           | "asyncDispose" | "dispose"
+                                           | "hasInstance" | "isConcatSpreadable"
+                                           | "match" | "matchAll"
+                                           | "replace" | "search" | "split"
+                                           | "metadata" | "species"
+                                           | "toPrimitive" | "toStringTag"
+                                           | "unscopables"
