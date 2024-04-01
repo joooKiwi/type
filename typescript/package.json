@@ -1,0 +1,64 @@
+{
+  "name": "@joookiwi/type",
+  "version": "1.0.0",
+  "description": "A typescript project to encapsulate a bunch of common type-aliases",
+
+  "scripts": {
+    "clear-dist-folder": "del-cli dist/",
+
+    "build": "tsc",
+
+    "test-pack":    "npm pack --dry-run",
+    "test-publish": "npm publish --@access=public --dry-run",
+
+    "pack": "npm pack",
+
+    "local-publish":  "npm link",
+    "publish-to-npm": "npm publish --access=public"
+  },
+
+  "directories": {
+    "lib": "./src",
+    "test": "./test"
+  },
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types":   "./dist/index.d.ts" },
+    "./*": { "types": "./dist/*.d.ts" }
+  },
+
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joooKiwi/types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joooKiwi/types/issues"
+  },
+
+  "keywords": [
+    "type-alias",
+    "types",
+    "nullable types",
+    "boolean types",
+    "bigint types",
+    "character types",
+    "empty types",
+    "number types",
+    "numeric types",
+    "string types"
+  ],
+  "funding": [
+    { "type": "github",          "url": "https://github.com/sponsors/joooKiwi" },
+    { "type": "buy-me-a-coffee", "url": "https://www.buymeacoffee.com/joookiwi" }
+  ],
+  "author": "JóôòKiwi",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.2"
+  }
+}
