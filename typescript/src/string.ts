@@ -5,6 +5,12 @@
  All the right is reserved to the author of this project.
  ******************************************************************************/
 
+/**
+ * A type-alias for a value
+ * ({@link String}, {@link Boolean} {@link Number}, {@link BigInt}, <b>null</b> or <b>undefined</b>)
+ * in a {@link String} template
+ */
+export type Template<T extends | string | boolean | number | bigint | null | undefined = | string | boolean | number | bigint | null | undefined, > = `${T}`
 /** A type-alias for a {@link String} as a primitive or an object */
 export type StringOrObject<T extends string = string, > = | T | String
 
