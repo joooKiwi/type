@@ -6,21 +6,40 @@
  ******************************************************************************/
 
 /**
- * A type-alias for <b>true</b> in a {@link String} template
+ * A type-alias for a {@link Boolean}
+ * in a {@link String} template
  *
- * @see BooleanTemplate
- */
-export type TrueTemplate<T extends true = true, > = `${T}`
-/**
- * A type-alias for <b>false</b> in a {@link String} template
- *
- * @see BooleanTemplate
- */
-export type FalseTemplate<T extends false = false, > = `${T}`
-/**
- * A type-alias for a {@link Boolean} in a {@link String} template
- *
+ * @see Template
  * @see TrueTemplate
  * @see FalseTemplate
  */
 export type BooleanTemplate<T extends boolean = boolean, > = `${T}`
+
+/**
+ * A type-alias for a {@link Boolean}
+ * as a primitive or in a {@link String} template
+ *
+ * @see Template
+ * @see TemplateOrTrue
+ * @see TemplateOrFalse
+ * @see TemplateOrBooleanOrObject
+ */
+export type TemplateOrBoolean<T extends boolean = boolean, > = | T | `${T}`
+
+/**
+ * A type-alias for a {@link Boolean}
+ * as a primitive or an object
+ *
+ * @see TemplateOrBooleanOrObject
+ */
+export type BooleanOrObject<T extends boolean = boolean, > = | T | Boolean
+
+/**
+ * A type-alias for a {@link Boolean}
+ * as a primitive, an object or in a {@link String} template
+ *
+ * @see Template
+ * @see BooleanOrObject
+ * @see TemplateOrBoolean
+ */
+export type TemplateOrBooleanOrObject<T extends boolean = boolean, > = | T | `${T}` | Boolean
