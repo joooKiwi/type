@@ -34,10 +34,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joooKiwi/types.git"
+    "url": "git+https://github.com/joooKiwi/type.git"
   },
   "bugs": {
-    "url": "https://github.com/joooKiwi/types/issues"
+    "url": "https://github.com/joooKiwi/type/issues"
   },
 
   "keywords": [
@@ -50,7 +50,10 @@
     "empty types",
     "number types",
     "numeric types",
-    "string types"
+    "string types",
+    "array types",
+    "set types",
+    "map types"
   ],
   "funding": [
     { "type": "github",          "url": "https://github.com/sponsors/joooKiwi" },
