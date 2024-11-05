@@ -835,3 +835,29 @@ export type NullableJavascriptSymbol<T extends JavascriptSymbol = JavascriptSymb
 export type NullableTypescriptSymbol<T extends TypescriptSymbol = TypescriptSymbol, > = | T | undefined
 
 //#endregion -------------------- symbol --------------------
+//#region -------------------- unknown --------------------
+
+/**
+ * A type-alias for <b>unknown</b> or <b>undefined</b>
+ *
+ * @see UndefinedOr
+ * @see NullableUnknown
+ */
+export type UndefinedOrUnknown<T extends unknown = unknown, > = | T | undefined
+/**
+ * A type-alias for <b>unknown</b> or <b>null</b>
+ *
+ * @see NullOr
+ * @see NullableUnknown
+ */
+export type NullOrUnknown<T extends unknown = unknown, > = | T | null
+/**
+ * A type-alias for <b>unknown</b> or <b>null</b>
+ *
+ * @see Nullable
+ * @see UndefinedOrUnknown
+ * @see NullOrUnknown
+ */
+export type NullableUnknown<T extends unknown = unknown, > = | T | null | undefined
+
+//#endregion -------------------- unknown --------------------
