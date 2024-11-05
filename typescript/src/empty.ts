@@ -60,8 +60,18 @@ export type EmptyMap = ReadonlyMap<any, never>
  */
 export type EmptyMutableMap = Map<any, never>
 
-/** A type-alias for an empty {@link WeakMap} */
+/**
+ * A type-alias for an empty {@link WeakMap}
+ *
+ * @see EmptyMutableWeakMap
+ */
 export type EmptyWeakMap = Readonly<WeakMap<WeakKey, never>>
+/**
+ * A type-alias for an empty {@link WeakMap MutableWeakMap}
+ *
+ * @see EmptyWeakMap
+ */
+export type EmptyMutableWeakMap = WeakMap<WeakKey, never>
 
 /**
  * A type-alias for an empty {@link Object}
