@@ -34,8 +34,18 @@ export type EmptySet = ReadonlySet<never>
  */
 export type EmptyMutableSet = Set<never>
 
-/** A type-alias for an empty {@link WeakSet} */
+/**
+ * A type-alias for an empty {@link WeakSet}
+ *
+ * @see EmptyMutableWeakSet
+ */
 export type EmptyWeakSet = Readonly<WeakSet<WeakKey>>
+/**
+ * A type-alias for an empty {@link WeakSet MutableWeakSet}
+ *
+ * @see EmptyWeakSet
+ */
+export type EmptyMutableWeakSet = WeakSet<WeakKey>
 
 /**
  * A type-alias for an empty {@link ReadonlyMap Map}
