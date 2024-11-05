@@ -21,8 +21,18 @@ export type EmptyArray = readonly []
  */
 export type EmptyMutableArray = []
 
-/** A type-alias for an empty {@link ReadonlySet Set} */
+/**
+ * A type-alias for an empty {@link ReadonlySet Set}
+ *
+ * @see EmptyMutableSet
+ */
 export type EmptySet = ReadonlySet<never>
+/**
+ * A type-alias for an empty {@link Set MutableSet}
+ *
+ * @see EmptySet
+ */
+export type EmptyMutableSet = Set<never>
 
 /** A type-alias for an empty {@link WeakSet} */
 export type EmptyWeakSet = Readonly<WeakSet<WeakKey>>
