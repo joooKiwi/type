@@ -52,13 +52,13 @@ export type EmptyMutableWeakSet = WeakSet<WeakKey>
  *
  * @see EmptyMutableMap
  */
-export type EmptyMap = ReadonlyMap<any, never>
+export type EmptyMap = ReadonlyMap<unknown, never>
 /**
  * A type-alias for an empty {@link Map MutableMap}
  *
  * @see EmptyMap
  */
-export type EmptyMutableMap = Map<any, never>
+export type EmptyMutableMap = Map<unknown, never>
 
 /**
  * A type-alias for an empty {@link WeakMap}
