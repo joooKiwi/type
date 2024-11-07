@@ -12,7 +12,6 @@ export type False<T extends false = false, > = T
  * A type-alias for the {@link Boolean} <b>false</b>
  * in a {@link String} template
  *
- * @see False
  * @see Template
  * @see BooleanTemplate
  */
@@ -22,8 +21,8 @@ export type FalseTemplate<T extends false = false, > = `${T}`
  * A type-alias for the {@link Boolean} <b>false</b>
  * as a primitive or in a {@link String} template
  *
- * @see False
  * @see Template
+ * @see FalseTemplate
  * @see FalseOrTemplateOrObject
  * @see TemplateOrBoolean
  */
