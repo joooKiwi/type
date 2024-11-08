@@ -9,9 +9,8 @@
  * A type-alias for <b>1</b> (as a {@link Number} or a {@link BigInt})
  * as a primitive
  *
- * @see Numeric
- * @see MinusOneNumber
- * @see MinusOneBigInt
+ * @see OneNumber
+ * @see OneBigInt
  */
 export type One<T extends | 1 | 1n = | 1 | 1n, > = T
 /**
@@ -33,9 +32,6 @@ export type OneBigInt<T extends 1n = 1n, > = T
  * A type-alias for <b>1</b> (as a {@link Number} or a {@link BigInt})
  * in a {@link String} template
  *
- * @see One
- * @see OneNumber
- * @see OneBigInt
  * @see Template
  * @see TemplateOrOne
  * @see TemplateOrOneNumber
@@ -50,9 +46,6 @@ export type OneTemplate<T extends | 1 | 1n = | 1 | 1n, > = `${T}`
  * A type-alias for <b>1</b> (as a {@link Number} or a {@link BigInt})
  * as a primitive or in a {@link String} template
  *
- * @see One
- * @see OneNumber
- * @see OneBigInt
  * @see Template
  * @see OneTemplate
  * @see TemplateOrOneNumber
@@ -66,8 +59,6 @@ export type TemplateOrOne<T extends | 1 | 1n = | 1 | 1n, > = | T | `${T}`
  * A type-alias for the {@link Number} <b>1</b>
  * as a primitive or in a {@link String} template
  *
- * @see One
- * @see OneBigInt
  * @see Template
  * @see OneTemplate
  * @see TemplateOrOne
@@ -79,8 +70,6 @@ export type TemplateOrOneNumber<T extends 1 = 1, > = | T | `${T}`
  * A type-alias for the {@link BigInt} <b>1</b>
  * as a primitive or in a {@link String} template
  *
- * @see One
- * @see OneBigInt
  * @see Template
  * @see OneTemplate
  * @see TemplateOrOne

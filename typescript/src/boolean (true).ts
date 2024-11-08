@@ -12,7 +12,6 @@ export type True<T extends true = true, > = T
  * A type-alias for the {@link Boolean} <b>true</b>
  * in a {@link String} template
  *
- * @see True
  * @see Template
  * @see BooleanTemplate
  */
@@ -22,7 +21,6 @@ export type TrueTemplate<T extends true = true, > = `${T}`
  * A type-alias for the {@link Boolean} <b>true</b>
  * in a {@link String} template
  *
- * @see True
  * @see Template
  * @see TrueTemplate
  * @see TrueOrTemplateOrObject

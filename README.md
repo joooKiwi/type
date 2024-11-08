@@ -9,13 +9,18 @@ It is meant to be used by `Typescript` (and `Javascript` in the documentation),
 
 This project has only the `Typescript` upload at the moment
 
-| Language   |                                                                                           Published                                                                                            |
-|:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Typescript | [Published to npm](https://www.npmjs.com/package/@joookiwi/type)<br/>[![downloads](https://img.shields.io/npm/dt/@joookiwi/type.svg)](https://npm-stat.com/charts.html?package=@joookiwi/type) |
-| Java       |                                                                                         _Not possible_                                                                                         |
-| Kotlin     |                                                                                             Maven                                                                                              |
-| PHP        |                                                                                         _Not possible_                                                                                         |
-| C#         |                                                                                             Nuget                                                                                              |
+| Language   |                                               Published                                               |
+|:-----------|:-----------------------------------------------------------------------------------------------------:|
+| Typescript | [![version][npm-image-link]][npm-link]<br/>[![downloads][npm-download-image-link]][npm-download-link] |
+| Java       |                                            _Not possible_                                             |
+| Kotlin     |                                                 Maven                                                 |
+| PHP        |                                            _Not possible_                                             |
+| C#         |                                                 Nuget                                                 |
+
+[npm-image-link]:          https://img.shields.io/npm/v/@joookiwi/type.svg?logo=npm&label=
+[npm-link]:                https://npmjs.org/package/@joookiwi/type
+[npm-download-image-link]: https://img.shields.io/npm/dt/@joookiwi/type.svg
+[npm-download-link]:       https://npm-stat.com/charts.html?package=@joookiwi/type
 
 ## Related projects
 
@@ -32,6 +37,7 @@ You can contribute to my projects in 2 different ways
 
 ## Version history
 
-| TS    | Date             | Quick note                                                                                                                                        |
-|-------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0 | March 31st, 2024 | First upload from 2 other projects ([collection](https://github.com/joooKiwi/collection) & [enumeration](https://github.com/joooKiwi/enumeration) |
+| TS    | Date               | Quick note                                                                                                                                        |
+|-------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.1.0 | November 7th, 2024 | New collections (Array, Set, Map),<br/>New empty mutable collections                                                                              |
+| 1.0.0 | March 31st, 2024   | First upload from 2 other projects ([collection](https://github.com/joooKiwi/collection) & [enumeration](https://github.com/joooKiwi/enumeration) |

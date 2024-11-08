@@ -9,9 +9,8 @@
  * A type-alias for <b>2</b> (as a {@link Number} or a {@link BigInt})
  * as a primitive
  *
- * @see Numeric
- * @see MinusTwoNumber
- * @see MinusTwoBigInt
+ * @see TwoNumber
+ * @see TwoBigInt
  */
 export type Two<T extends | 2 | 2n = | 2 | 2n, > = T
 /**
@@ -33,9 +32,6 @@ export type TwoBigInt<T extends 2n = 2n, > = T
  * A type-alias for <b>2</b> (as a {@link Number} or a {@link BigInt})
  * in a {@link String} template
  *
- * @see Two
- * @see TwoNumber
- * @see TwoBigInt
  * @see Template
  * @see TemplateOrTwo
  * @see NumberTemplate
@@ -48,9 +44,6 @@ export type TwoTemplate<T extends | 2 | 2n = | 2 | 2n, > = `${T}`
  * A type-alias for <b>2</b> (as a {@link Number} or a {@link BigInt})
  * as a primitive or in a {@link String} template
  *
- * @see Two
- * @see TwoNumber
- * @see TwoBigInt
  * @see Template
  * @see TwoTemplate
  * @see TemplateOrTwoNumber
@@ -64,8 +57,6 @@ export type TemplateOrTwo<T extends | 2 | 2n = | 2 | 2n, > = | T | `${T}`
  * A type-alias for the {@link Number} <b>2</b>
  * as a primitive or in a {@link String} template
  *
- * @see Two
- * @see TwoNumber
  * @see Template
  * @see TwoTemplate
  * @see TemplateOrTwo
@@ -76,8 +67,6 @@ export type TemplateOrTwoNumber<T extends 2 = 2, > = | T | `${T}`
  * A type-alias for the {@link BigInt} <b>2</b>
  * as a primitive or in a {@link String} template
  *
- * @see Two
- * @see TwoBigInt
  * @see Template
  * @see TwoTemplate
  * @see TemplateOrTwo

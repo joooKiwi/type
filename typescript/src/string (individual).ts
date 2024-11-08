@@ -31,5 +31,9 @@ export type Comma = ','
 export type Point = '.'
 /** A type-alias for the "infinity" {@link String character} */
 export type InfinityString = '∞'
+/** A type-alias for the word "infinity" {@link String} */
+export type InfinityWordString = "Infinity"
+/** A type-alias for the word "Invalid date" {@link String} */
+export type InvalidDateString = "Invalid Date"
 /** A type-alias for the "suspension point" {@link String character} */
 export type SuspensionPoint = '…'
