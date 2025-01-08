@@ -63,7 +63,7 @@ export type EmptyMap<K = never, V = never, > = ReadonlyMap<K, V>
  * A type-alias for an empty {@link Map MutableMap}
  *
  * @param K The {@link Map MutableMap} key type (<i><b>never</b> by default</i>)
- * @param V The {@link Map MutableMap} value type (<i><b>never</b>r} by default</i>)
+ * @param V The {@link Map MutableMap} value type (<i><b>never</b> by default</i>)
  * @see EmptyMap
  */
 export type EmptyMutableMap<K = never, V = never, > = Map<K, V>
@@ -80,7 +80,7 @@ export type EmptyWeakMap<K extends WeakKey = never, V = never, > = Readonly<Weak
  * A type-alias for an empty {@link WeakMap MutableWeakMap}
  *
  * @param K The {@link WeakMap MutableWeakMap} key type (<i><b>never</b> by default</i>)
- * @param V The {@link WeakMap MutableWeakMap} value type (<i><b>never</b>} by default</i>)
+ * @param V The {@link WeakMap MutableWeakMap} value type (<i><b>never</b> by default</i>)
  * @see EmptyWeakMap
  */
 export type EmptyMutableWeakMap<K extends WeakKey = never, V = never, > = WeakMap<K, V>
