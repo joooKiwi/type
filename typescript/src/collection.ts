@@ -5,6 +5,8 @@
  All the right is reserved to the author of this project.
  ******************************************************************************/
 
+import type {UndefinedOr} from "./nullable"
+
 /**
  * A type-alias for an {@link ReadonlyArray Array} of a value
  *
@@ -58,6 +60,112 @@ export type Set<T, > = ReadonlySet<T>
  * @see MutableTypescriptSymbolSet
  */
 export type MutableSet<T, > = globalThis.Set<T>
+
+
+/**
+ * An interface declaration for a {@link globalThis.WeakSet WeakSet} of a value that is immutable.
+ *
+ * The collection is holding {@link Object} and {@link Symbol}
+ * that is garbage-collectable.
+ * An object may be present at one time and not at the other due to being garbage collected.
+ *
+ * @supportedBy Chrome 36, Chrome Android 36
+ * @supportedBy Edge
+ * @supportedBy Firefox 34
+ * @supportedBy Opera 23
+ * @supportedBy Safari 9, Safari iOS 9
+ * @supportedBy Node.js 0.12.0
+ * @supportedBy Deno
+ * @by {@link https://developer.mozilla.org/docs/web/javascript/reference/global_objects/weakset/has/contributors.txt Mozilla Contributors}
+ * @by {@link https://creativecommons.org/licenses/by-sa/2.5 CC BY-SA 2.5}
+ */
+export interface WeakSet<T extends WeakKey, > {
+
+    /**
+     * Indicate whenever the {@link value} exist or not in the current {@link WeakSet collection}
+     *
+     * @param value The value to test its presence
+     * @return Returns `true` if it exists otherwise `false`.
+     *         Always returns `false` if the {@link value} is not an {@link Object} or a {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol#shared_symbols_in_the_global_symbol_registry non-registered symbol}
+     * @supportedBy Chrome 36, Chrome Android 36
+     * @supportedBy Edge
+     * @supportedBy Firefox 34
+     * @supportedBy Opera 23
+     * @supportedBy Safari 9, Safari iOS 9
+     * @supportedBy Node.js 0.12.0
+     * @supportedBy Deno
+     * @by {@link https://developer.mozilla.org/docs/web/javascript/reference/global_objects/weakset/has/contributors.txt Mozilla Contributors}
+     * @by {@link https://creativecommons.org/licenses/by-sa/2.5 CC BY-SA 2.5}
+     */
+    has(value: T,): boolean
+
+    /**
+     * Give an output for the call {@link Object.toString.call} giving [object WeakSet] instead of the general [object Object]
+     *
+     * @see https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag
+     */
+    readonly [Symbol.toStringTag]: string
+
+}
+
+/**
+ * An interface declaration for a {@link globalThis.WeakSet WeakSet} of a value that is mutable
+ *
+ * The collection is holding {@link Object} and {@link Symbol}
+ * that is garbage-collectable.
+ * An object may be present at one time and not at the other due to being garbage collected.
+ *
+ * @supportedBy Chrome 36, Chrome Android 36
+ * @supportedBy Edge
+ * @supportedBy Firefox 34
+ * @supportedBy Opera 23
+ * @supportedBy Safari 9, Safari iOS 9
+ * @supportedBy Node.js 0.12.0
+ * @supportedBy Deno
+ * @by {@link https://developer.mozilla.org/docs/web/javascript/reference/global_objects/weakset/has/contributors.txt Mozilla Contributors}
+ * @by {@link https://creativecommons.org/licenses/by-sa/2.5 CC BY-SA 2.5}
+ */
+export interface MutableWeakSet<T extends WeakKey, >
+    extends WeakSet<T> {
+
+    /**
+     * Add a new {@link value} to the end of the current {@link MutableWeakSet collection}
+     *
+     * @param value The value to add
+     * @return The current {@link MutableWeakSet} instance
+     * @throws TypeError The {@link value} is not an {@link Object} or a {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol#shared_symbols_in_the_global_symbol_registry non-registered symbol}
+     * @supportedBy Chrome 36, Chrome Android 36
+     * @supportedBy Edge
+     * @supportedBy Firefox 34
+     * @supportedBy Opera 23
+     * @supportedBy Safari 9, Safari iOS 9
+     * @supportedBy Node.js 0.12.0
+     * @supportedBy Deno
+     * @by {@link https://developer.mozilla.org/docs/web/javascript/reference/global_objects/weakset/has/contributors.txt Mozilla Contributors}
+     * @by {@link https://creativecommons.org/licenses/by-sa/2.5 CC BY-SA 2.5}
+     */
+    add(value: T,): this
+
+    /**
+     * Remove a {@link value} (if it exists) in the current {@link MutableWeakSet collection}
+     *
+     * @param value The value to possibly remove
+     * @return Returns `true` if the {@link value} has been removed successfully, otherwise `false`.
+     *         Always returns `false` if the {@link value} is not an {@link Object} or a {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol#shared_symbols_in_the_global_symbol_registry non-registered symbol}
+     * @supportedBy Chrome 36, Chrome Android 36
+     * @supportedBy Edge
+     * @supportedBy Firefox 34
+     * @supportedBy Opera 23
+     * @supportedBy Safari 9, Safari iOS 9
+     * @supportedBy Node.js 0.12.0
+     * @supportedBy Deno
+     * @by {@link https://developer.mozilla.org/docs/web/javascript/reference/global_objects/weakset/has/contributors.txt Mozilla Contributors}
+     * @by {@link https://creativecommons.org/licenses/by-sa/2.5 CC BY-SA 2.5}
+     */
+    delete(value: T,): boolean
+
+}
+
 
 /**
  * A type-alias for a {@link ReadonlyMap Map} of a key and a value
@@ -151,7 +259,6 @@ export type MutableSet<T, > = globalThis.Set<T>
  * @see TypescriptSymbolTypescriptSymbolMap
  */
 export type Map<K, V, > = ReadonlyMap<K, V>
-
 /**
  * A type-alias for a {@link globalThis.Map MutableMap} of a key and a value
  *
@@ -244,3 +351,127 @@ export type Map<K, V, > = ReadonlyMap<K, V>
  * @see MutableTypescriptSymbolTypescriptSymbolMap
  */
 export type MutableMap<K, V, > = globalThis.Map<K, V>
+
+
+/**
+ * An interface declaration for a {@link globalThis.WeakMap WeakMap} of a key-value pair that is immutable.
+ *
+ * The associative collection is holding a key {@link Object} and {@link Symbol}
+ * that is garbage-collectable.
+ * A key may be present at one time and not at the other due to being garbage collected.
+ *
+ * @supportedBy Chrome 36, Chrome Android 36
+ * @supportedBy Edge
+ * @supportedBy Firefox 6
+ * @supportedBy Opera 23
+ * @supportedBy Safari 8, Safari iOS 8
+ * @supportedBy Node.js 0.12.0
+ * @supportedBy Deno
+ * @by {@link https://developer.mozilla.org/docs/web/javascript/reference/global_objects/weakset/has/contributors.txt Mozilla Contributors}
+ * @by {@link https://creativecommons.org/licenses/by-sa/2.5 CC BY-SA 2.5}
+ */
+export interface WeakMap<K extends WeakKey, V, > {
+
+    /**
+     * Retrieve the element associated to the {@link key} received in the {@link WeakMap associative collection}
+     *
+     * @param key The key to retrieve a possible value
+     * @return Returns the value present if it exists, otherwise `undefined`.
+     *         Always returns `undefined` if the {@link value} is not an {@link Object} or a {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol#shared_symbols_in_the_global_symbol_registry non-registered symbol}
+     * @supportedBy Chrome 36, Chrome Android 36
+     * @supportedBy Edge
+     * @supportedBy Firefox 6
+     * @supportedBy Opera 23
+     * @supportedBy Safari 8, Safari iOS 8
+     * @supportedBy Node.js 0.12.0
+     * @supportedBy Deno
+     * @by {@link https://developer.mozilla.org/docs/web/javascript/reference/global_objects/weakset/has/contributors.txt Mozilla Contributors}
+     * @by {@link https://creativecommons.org/licenses/by-sa/2.5 CC BY-SA 2.5}
+     */
+    get(key: K,): UndefinedOr<V>
+
+    /**
+     * Indicate whenever the {@link key} has an existant value in the current {@link WeakMap associative collection}
+     *
+     * @param key The key to test its presence
+     * @return Returns `true` if it an element exists otherwise `false`.
+     *         Always returns `false` if the {@link key} is not an {@link Object} or a {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol#shared_symbols_in_the_global_symbol_registry non-registered symbol}
+     * @supportedBy Chrome 36, Chrome Android 36
+     * @supportedBy Edge
+     * @supportedBy Firefox 6
+     * @supportedBy Opera 23
+     * @supportedBy Safari 8, Safari iOS 8
+     * @supportedBy Node.js 0.12.0
+     * @supportedBy Deno
+     * @by {@link https://developer.mozilla.org/docs/web/javascript/reference/global_objects/weakset/has/contributors.txt Mozilla Contributors}
+     * @by {@link https://creativecommons.org/licenses/by-sa/2.5 CC BY-SA 2.5}
+     */
+    has(key: K,): boolean
+
+    /**
+     * Give an output for the call {@link Object.toString.call} giving [object WeakMap] instead of the general [object Object]
+     *
+     * @see https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag
+     */
+    readonly [Symbol.toStringTag]: string
+
+}
+
+/**
+ * An interface declaration for a {@link globalThis.WeakMap WeakMap} of a key-value pair that is mutable.
+ *
+ * The associative collection is holding a key {@link Object} and {@link Symbol}
+ * that is garbage-collectable.
+ * A key may be present at one time and not at the other due to being garbage collected.
+ *
+ * @supportedBy Chrome 36, Chrome Android 36
+ * @supportedBy Edge
+ * @supportedBy Firefox 6
+ * @supportedBy Opera 23
+ * @supportedBy Safari 8, Safari iOS 8
+ * @supportedBy Node.js 0.12.0
+ * @supportedBy Deno
+ * @by {@link https://developer.mozilla.org/docs/web/javascript/reference/global_objects/weakset/has/contributors.txt Mozilla Contributors}
+ * @by {@link https://creativecommons.org/licenses/by-sa/2.5 CC BY-SA 2.5}
+ */
+export interface MutableWeakMap<K extends WeakKey, V, >
+    extends WeakMap<K, V> {
+
+    /**
+     * Add or change the {@link value} associated to the {@link key} received
+     * in the current {@link MutableWeakMap associative collection}
+     *
+     * @param key   The key to add or update
+     * @param value The value to associate to the {@link key}
+     * @throws TypeError The {@link key} is not an {@link Object} or a {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol#shared_symbols_in_the_global_symbol_registry non-registered symbol}
+     * @supportedBy Chrome 36, Chrome Android 36
+     * @supportedBy Edge
+     * @supportedBy Firefox 6
+     * @supportedBy Opera 23
+     * @supportedBy Safari 8, Safari iOS 8
+     * @supportedBy Node.js 0.12.0
+     * @supportedBy Deno
+     * @by {@link https://developer.mozilla.org/docs/web/javascript/reference/global_objects/weakset/has/contributors.txt Mozilla Contributors}
+     * @by {@link https://creativecommons.org/licenses/by-sa/2.5 CC BY-SA 2.5}
+     */
+    set(key: K, value: V,): this
+
+    /**
+     * Remove a {@link key} (if it exists) in the current {@link MutableWeakMap associative collection}
+     *
+     * @param key The key to possibly remove
+     * @return Returns `true` if the {@link key} has been removed successfully, otherwise `false`.
+     *         Always returns `false` if the {@link key} is not an {@link Object} or a {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol#shared_symbols_in_the_global_symbol_registry non-registered symbol}
+     * @supportedBy Chrome 36, Chrome Android 36
+     * @supportedBy Edge
+     * @supportedBy Firefox 6
+     * @supportedBy Opera 23
+     * @supportedBy Safari 8, Safari iOS 8
+     * @supportedBy Node.js 0.12.0
+     * @supportedBy Deno
+     * @by {@link https://developer.mozilla.org/docs/web/javascript/reference/global_objects/weakset/has/contributors.txt Mozilla Contributors}
+     * @by {@link https://creativecommons.org/licenses/by-sa/2.5 CC BY-SA 2.5}
+     */
+    delete(key: K,): boolean
+
+}
