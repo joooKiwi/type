@@ -1,4 +1,4 @@
-//··············································································
+//··························································
 // Copyright (c) 2023-2025. Jonathan Bédard ~ JóôòKiwi
 //
 // This project is free to use.
@@ -8,7 +8,7 @@
 //  - https://github.com/joooKiwi/lazy
 //  - https://github.com/joooKiwi/collection
 //  - https://github.com/joooKiwi/enumeration
-//··············································································
+//··························································
 
 /**
  * A type-alias for <b>-1</b> (as a {@link Number} or a {@link BigInt})
