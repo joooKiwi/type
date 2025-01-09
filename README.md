@@ -39,5 +39,6 @@ You can contribute to my projects in 2 different ways
 
 | TS    | Date               | Quick note                                                                                                                                        |
 |-------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.2.0 | January 8, 2025    | 2025 update,<br/>New collections declaration (WeakSet, WeakMap),<br/>Change to use `never` on the empty collections by default                    |
 | 1.1.0 | November 7th, 2024 | New collections (Array, Set, Map),<br/>New empty mutable collections                                                                              |
 | 1.0.0 | March 31st, 2024   | First upload from 2 other projects ([collection](https://github.com/joooKiwi/collection) & [enumeration](https://github.com/joooKiwi/enumeration) |
