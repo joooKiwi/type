@@ -48,6 +48,6 @@ You can contribute to my projects in 2 different ways
 
 [ts-v1.0]: https://github.com/joooKiwi/type/releases/tag/v1.0.0-ts
 [ts-v1.1]: https://github.com/joooKiwi/type/releases/tag/v1.1.0-ts
-[ts-v1.2]: https://github.com/joooKiwi/type/releases/tag/v1.2.0-ts
+[ts-v1.2]: https://github.com/joooKiwi/type/releases/tag/v1.2.1-ts
 
 <!-- Version references -->
