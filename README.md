@@ -42,7 +42,7 @@ You can contribute to my projects in 2 different ways
 | 1.2.1            | August 12th, 2025  | A small update of the dependencies                                                                                                                |
 | [1.2.0][ts-v1.2] | January 8th, 2025  | 2025 update,<br/>New collections declaration (WeakSet, WeakMap),<br/>Change to use `never` on the empty collections by default                    |
 | [1.1.0][ts-v1.1] | November 7th, 2024 | New collections (Array, Set, Map),<br/>New empty mutable collections                                                                              |
-| [1.0.0][ts-v1.1] | March 31st, 2024   | First upload from 2 other projects ([collection](https://github.com/joooKiwi/collection) & [enumeration](https://github.com/joooKiwi/enumeration) |
+| [1.0.0][ts-v1.0] | March 31st, 2024   | First upload from 2 other projects ([collection](https://github.com/joooKiwi/collection) & [enumeration](https://github.com/joooKiwi/enumeration) |
 
 <!-- Version references -->
 
