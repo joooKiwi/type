@@ -42,6 +42,7 @@ export type PossibleEdgeCaseNumericName = | "NaN" | "Infinity" | "-Infinity"
  * @see PossibleTypescriptSymbolName
  */
 export type PossibleJavascriptSymbolName = | "asyncIterator" | "iterator"
+                                           | "asyncDispose" | "dispose"
                                            | "hasInstance" | "isConcatSpreadable"
                                            | "match" | "matchAll"
                                            | "replace" | "search" | "split"
