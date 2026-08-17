@@ -40,7 +40,7 @@ export type ArrayOf1<T, > = readonly [T,]
  * @see JavascriptSymbolArrayOf2
  * @see TypescriptSymbolArrayOf2
  */
-export type ArrayOf2<T, > = readonly [T, T,]
+export type ArrayOf2<T, T1 extends T = T, T2 extends T = T, > = readonly [T1, T2,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 3 {@link Boolean}
  *
@@ -54,7 +54,7 @@ export type ArrayOf2<T, > = readonly [T, T,]
  * @see JavascriptSymbolArrayOf3
  * @see TypescriptSymbolArrayOf3
  */
-export type ArrayOf3<T, > = readonly [T, T, T,]
+export type ArrayOf3<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = readonly [T1, T2, T3,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 4 {@link Boolean}
  *
@@ -68,7 +68,7 @@ export type ArrayOf3<T, > = readonly [T, T, T,]
  * @see JavascriptSymbolArrayOf4
  * @see TypescriptSymbolArrayOf4
  */
-export type ArrayOf4<T, > = readonly [T, T, T, T,]
+export type ArrayOf4<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = readonly [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 5 {@link Boolean}
  *
@@ -82,7 +82,7 @@ export type ArrayOf4<T, > = readonly [T, T, T, T,]
  * @see JavascriptSymbolArrayOf5
  * @see TypescriptSymbolArrayOf5
  */
-export type ArrayOf5<T, > = readonly [T, T, T, T, T,]
+export type ArrayOf5<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = readonly [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 6 {@link Boolean}
  *
@@ -96,7 +96,7 @@ export type ArrayOf5<T, > = readonly [T, T, T, T, T,]
  * @see JavascriptSymbolArrayOf6
  * @see TypescriptSymbolArrayOf6
  */
-export type ArrayOf6<T, > = readonly [T, T, T, T, T, T,]
+export type ArrayOf6<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 7 {@link Boolean}
  *
@@ -110,7 +110,7 @@ export type ArrayOf6<T, > = readonly [T, T, T, T, T, T,]
  * @see JavascriptSymbolArrayOf7
  * @see TypescriptSymbolArrayOf7
  */
-export type ArrayOf7<T, > = readonly [T, T, T, T, T, T, T,]
+export type ArrayOf7<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 8 {@link Boolean}
  *
@@ -124,7 +124,7 @@ export type ArrayOf7<T, > = readonly [T, T, T, T, T, T, T,]
  * @see JavascriptSymbolArrayOf8
  * @see TypescriptSymbolArrayOf8
  */
-export type ArrayOf8<T, > = readonly [T, T, T, T, T, T, T, T,]
+export type ArrayOf8<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 9 {@link Boolean}
  *
@@ -138,7 +138,7 @@ export type ArrayOf8<T, > = readonly [T, T, T, T, T, T, T, T,]
  * @see JavascriptSymbolArrayOf9
  * @see TypescriptSymbolArrayOf9
  */
-export type ArrayOf9<T, > = readonly [T, T, T, T, T, T, T, T, T,]
+export type ArrayOf9<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 10 {@link Boolean}
  *
@@ -152,7 +152,7 @@ export type ArrayOf9<T, > = readonly [T, T, T, T, T, T, T, T, T,]
  * @see JavascriptSymbolArrayOf10
  * @see TypescriptSymbolArrayOf10
  */
-export type ArrayOf10<T, > = readonly [T, T, T, T, T, T, T, T, T, T,]
+export type ArrayOf10<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 
 /**
@@ -170,7 +170,7 @@ export type BooleanArrayOf1<T extends boolean = boolean, > = readonly [T,]
  * @see import('collection (array)').BooleanArray
  * @see ArrayOf2
  */
-export type BooleanArrayOf2<T extends boolean = boolean, > = readonly [T, T,]
+export type BooleanArrayOf2<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, > = readonly [T1, T2,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 3 {@link Boolean}
  *
@@ -178,7 +178,7 @@ export type BooleanArrayOf2<T extends boolean = boolean, > = readonly [T, T,]
  * @see import('collection (array)').BooleanArray
  * @see ArrayOf3
  */
-export type BooleanArrayOf3<T extends boolean = boolean, > = readonly [T, T, T,]
+export type BooleanArrayOf3<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = readonly [T1, T2, T3,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 4 {@link Boolean}
  *
@@ -186,7 +186,7 @@ export type BooleanArrayOf3<T extends boolean = boolean, > = readonly [T, T, T,]
  * @see import('collection (array)').BooleanArray
  * @see ArrayOf4
  */
-export type BooleanArrayOf4<T extends boolean = boolean, > = readonly [T, T, T, T,]
+export type BooleanArrayOf4<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = readonly [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 5 {@link Boolean}
  *
@@ -194,7 +194,7 @@ export type BooleanArrayOf4<T extends boolean = boolean, > = readonly [T, T, T, 
  * @see import('collection (array)').BooleanArray
  * @see ArrayOf5
  */
-export type BooleanArrayOf5<T extends boolean = boolean, > = readonly [T, T, T, T, T,]
+export type BooleanArrayOf5<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = readonly [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 6 {@link Boolean}
  *
@@ -202,7 +202,7 @@ export type BooleanArrayOf5<T extends boolean = boolean, > = readonly [T, T, T, 
  * @see import('collection (array)').BooleanArray
  * @see ArrayOf6
  */
-export type BooleanArrayOf6<T extends boolean = boolean, > = readonly [T, T, T, T, T, T,]
+export type BooleanArrayOf6<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 7 {@link Boolean}
  *
@@ -210,7 +210,7 @@ export type BooleanArrayOf6<T extends boolean = boolean, > = readonly [T, T, T, 
  * @see import('collection (array)').BooleanArray
  * @see ArrayOf7
  */
-export type BooleanArrayOf7<T extends boolean = boolean, > = readonly [T, T, T, T, T, T, T,]
+export type BooleanArrayOf7<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 8 {@link Boolean}
  *
@@ -218,7 +218,7 @@ export type BooleanArrayOf7<T extends boolean = boolean, > = readonly [T, T, T, 
  * @see import('collection (array)').BooleanArray
  * @see ArrayOf8
  */
-export type BooleanArrayOf8<T extends boolean = boolean, > = readonly [T, T, T, T, T, T, T, T,]
+export type BooleanArrayOf8<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 9 {@link Boolean}
  *
@@ -226,7 +226,7 @@ export type BooleanArrayOf8<T extends boolean = boolean, > = readonly [T, T, T, 
  * @see import('collection (array)').BooleanArray
  * @see ArrayOf9
  */
-export type BooleanArrayOf9<T extends boolean = boolean, > = readonly [T, T, T, T, T, T, T, T, T,]
+export type BooleanArrayOf9<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 10 {@link Boolean}
  *
@@ -234,7 +234,7 @@ export type BooleanArrayOf9<T extends boolean = boolean, > = readonly [T, T, T, 
  * @see import('collection (array)').BooleanArray
  * @see ArrayOf10
  */
-export type BooleanArrayOf10<T extends boolean = boolean, > = readonly [T, T, T, T, T, T, T, T, T, T,]
+export type BooleanArrayOf10<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 
 /**
@@ -256,7 +256,7 @@ export type NumericArrayOf1<T extends Numeric = Numeric, > = readonly [T,]
  * @see NumberArrayOf2
  * @see BigIntArrayOf3
  */
-export type NumericArrayOf2<T extends Numeric = Numeric, > = readonly [T, T,]
+export type NumericArrayOf2<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, > = readonly [T1, T2,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 3 {@link Number} or {@link BigInt}
  *
@@ -266,7 +266,7 @@ export type NumericArrayOf2<T extends Numeric = Numeric, > = readonly [T, T,]
  * @see NumberArrayOf3
  * @see BigIntArrayOf3
  */
-export type NumericArrayOf3<T extends Numeric = Numeric, > = readonly [T, T, T,]
+export type NumericArrayOf3<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = readonly [T1, T2, T3,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 4 {@link Number} or {@link BigInt}
  *
@@ -276,7 +276,7 @@ export type NumericArrayOf3<T extends Numeric = Numeric, > = readonly [T, T, T,]
  * @see NumberArrayOf4
  * @see BigIntArrayOf4
  */
-export type NumericArrayOf4<T extends Numeric = Numeric, > = readonly [T, T, T, T,]
+export type NumericArrayOf4<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = readonly [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 5 {@link Number} or {@link BigInt}
  *
@@ -286,7 +286,7 @@ export type NumericArrayOf4<T extends Numeric = Numeric, > = readonly [T, T, T, 
  * @see NumberArrayOf5
  * @see BigIntArrayOf5
  */
-export type NumericArrayOf5<T extends Numeric = Numeric, > = readonly [T, T, T, T, T,]
+export type NumericArrayOf5<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = readonly [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 6 {@link Number} or {@link BigInt}
  *
@@ -296,7 +296,7 @@ export type NumericArrayOf5<T extends Numeric = Numeric, > = readonly [T, T, T, 
  * @see NumberArrayOf6
  * @see BigIntArrayOf6
  */
-export type NumericArrayOf6<T extends Numeric = Numeric, > = readonly [T, T, T, T, T, T,]
+export type NumericArrayOf6<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 7 {@link Number} or {@link BigInt}
  *
@@ -306,7 +306,7 @@ export type NumericArrayOf6<T extends Numeric = Numeric, > = readonly [T, T, T, 
  * @see NumberArrayOf7
  * @see BigIntArrayOf7
  */
-export type NumericArrayOf7<T extends Numeric = Numeric, > = readonly [T, T, T, T, T, T, T,]
+export type NumericArrayOf7<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 8 {@link Number} or {@link BigInt}
  *
@@ -316,7 +316,7 @@ export type NumericArrayOf7<T extends Numeric = Numeric, > = readonly [T, T, T, 
  * @see NumberArrayOf8
  * @see BigIntArrayOf8
  */
-export type NumericArrayOf8<T extends Numeric = Numeric, > = readonly [T, T, T, T, T, T, T, T,]
+export type NumericArrayOf8<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 9 {@link Number} or {@link BigInt}
  *
@@ -326,7 +326,7 @@ export type NumericArrayOf8<T extends Numeric = Numeric, > = readonly [T, T, T, 
  * @see NumberArrayOf9
  * @see BigIntArrayOf9
  */
-export type NumericArrayOf9<T extends Numeric = Numeric, > = readonly [T, T, T, T, T, T, T, T, T,]
+export type NumericArrayOf9<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 10 {@link Number} or {@link BigInt}
  *
@@ -336,7 +336,7 @@ export type NumericArrayOf9<T extends Numeric = Numeric, > = readonly [T, T, T, 
  * @see NumberArrayOf10
  * @see BigIntArrayOf10
  */
-export type NumericArrayOf10<T extends Numeric = Numeric, > = readonly [T, T, T, T, T, T, T, T, T, T,]
+export type NumericArrayOf10<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 1 {@link Number}
@@ -357,7 +357,7 @@ export type NumberArrayOf1<T extends number = number, > = readonly [T,]
  * @see NumberArrayOf2
  * @see BigIntArrayOf3
  */
-export type NumberArrayOf2<T extends number = number, > = readonly [T, T,]
+export type NumberArrayOf2<T extends number = number, T1 extends T = T, T2 extends T = T, > = readonly [T1, T2,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 3 {@link Number}
  *
@@ -367,7 +367,7 @@ export type NumberArrayOf2<T extends number = number, > = readonly [T, T,]
  * @see NumberArrayOf3
  * @see BigIntArrayOf3
  */
-export type NumberArrayOf3<T extends number = number, > = readonly [T, T, T,]
+export type NumberArrayOf3<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = readonly [T1, T2, T3,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 4 {@link Number}
  *
@@ -377,7 +377,7 @@ export type NumberArrayOf3<T extends number = number, > = readonly [T, T, T,]
  * @see NumberArrayOf4
  * @see BigIntArrayOf4
  */
-export type NumberArrayOf4<T extends number = number, > = readonly [T, T, T, T,]
+export type NumberArrayOf4<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = readonly [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 5 {@link Number}
  *
@@ -387,7 +387,7 @@ export type NumberArrayOf4<T extends number = number, > = readonly [T, T, T, T,]
  * @see NumberArrayOf5
  * @see BigIntArrayOf5
  */
-export type NumberArrayOf5<T extends number = number, > = readonly [T, T, T, T, T,]
+export type NumberArrayOf5<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = readonly [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 6 {@link Number}
  *
@@ -397,7 +397,7 @@ export type NumberArrayOf5<T extends number = number, > = readonly [T, T, T, T, 
  * @see NumberArrayOf6
  * @see BigIntArrayOf6
  */
-export type NumberArrayOf6<T extends number = number, > = readonly [T, T, T, T, T, T,]
+export type NumberArrayOf6<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 7 {@link Number}
  *
@@ -407,7 +407,7 @@ export type NumberArrayOf6<T extends number = number, > = readonly [T, T, T, T, 
  * @see NumberArrayOf7
  * @see BigIntArrayOf7
  */
-export type NumberArrayOf7<T extends number = number, > = readonly [T, T, T, T, T, T, T,]
+export type NumberArrayOf7<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 8 {@link Number}
  *
@@ -417,7 +417,7 @@ export type NumberArrayOf7<T extends number = number, > = readonly [T, T, T, T, 
  * @see NumberArrayOf8
  * @see BigIntArrayOf8
  */
-export type NumberArrayOf8<T extends number = number, > = readonly [T, T, T, T, T, T, T, T,]
+export type NumberArrayOf8<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 9 {@link Number}
  *
@@ -427,7 +427,7 @@ export type NumberArrayOf8<T extends number = number, > = readonly [T, T, T, T, 
  * @see NumberArrayOf9
  * @see BigIntArrayOf9
  */
-export type NumberArrayOf9<T extends number = number, > = readonly [T, T, T, T, T, T, T, T, T,]
+export type NumberArrayOf9<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 10 {@link Number}
  *
@@ -437,7 +437,7 @@ export type NumberArrayOf9<T extends number = number, > = readonly [T, T, T, T, 
  * @see NumberArrayOf10
  * @see BigIntArrayOf10
  */
-export type NumberArrayOf10<T extends number = number, > = readonly [T, T, T, T, T, T, T, T, T, T,]
+export type NumberArrayOf10<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 1 {@link BigInt}
@@ -458,7 +458,7 @@ export type BigIntArrayOf1<T extends bigint = bigint, > = readonly [T,]
  * @see BigIntArrayOf2
  * @see BigIntArrayOf3
  */
-export type BigIntArrayOf2<T extends bigint = bigint, > = readonly [T, T,]
+export type BigIntArrayOf2<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, > = readonly [T1, T2,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 3 {@link BigInt}
  *
@@ -468,7 +468,7 @@ export type BigIntArrayOf2<T extends bigint = bigint, > = readonly [T, T,]
  * @see BigIntArrayOf3
  * @see BigIntArrayOf3
  */
-export type BigIntArrayOf3<T extends bigint = bigint, > = readonly [T, T, T,]
+export type BigIntArrayOf3<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = readonly [T1, T2, T3,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 4 {@link BigInt}
  *
@@ -478,7 +478,7 @@ export type BigIntArrayOf3<T extends bigint = bigint, > = readonly [T, T, T,]
  * @see BigIntArrayOf4
  * @see BigIntArrayOf4
  */
-export type BigIntArrayOf4<T extends bigint = bigint, > = readonly [T, T, T, T,]
+export type BigIntArrayOf4<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = readonly [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 5 {@link BigInt}
  *
@@ -488,7 +488,7 @@ export type BigIntArrayOf4<T extends bigint = bigint, > = readonly [T, T, T, T,]
  * @see BigIntArrayOf5
  * @see BigIntArrayOf5
  */
-export type BigIntArrayOf5<T extends bigint = bigint, > = readonly [T, T, T, T, T,]
+export type BigIntArrayOf5<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = readonly [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 6 {@link BigInt}
  *
@@ -498,7 +498,7 @@ export type BigIntArrayOf5<T extends bigint = bigint, > = readonly [T, T, T, T, 
  * @see BigIntArrayOf6
  * @see BigIntArrayOf6
  */
-export type BigIntArrayOf6<T extends bigint = bigint, > = readonly [T, T, T, T, T, T,]
+export type BigIntArrayOf6<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 7 {@link BigInt}
  *
@@ -508,7 +508,7 @@ export type BigIntArrayOf6<T extends bigint = bigint, > = readonly [T, T, T, T, 
  * @see BigIntArrayOf7
  * @see BigIntArrayOf7
  */
-export type BigIntArrayOf7<T extends bigint = bigint, > = readonly [T, T, T, T, T, T, T,]
+export type BigIntArrayOf7<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 8 {@link BigInt}
  *
@@ -518,7 +518,7 @@ export type BigIntArrayOf7<T extends bigint = bigint, > = readonly [T, T, T, T, 
  * @see BigIntArrayOf8
  * @see BigIntArrayOf8
  */
-export type BigIntArrayOf8<T extends bigint = bigint, > = readonly [T, T, T, T, T, T, T, T,]
+export type BigIntArrayOf8<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 9 {@link BigInt}
  *
@@ -528,7 +528,7 @@ export type BigIntArrayOf8<T extends bigint = bigint, > = readonly [T, T, T, T, 
  * @see BigIntArrayOf9
  * @see BigIntArrayOf9
  */
-export type BigIntArrayOf9<T extends bigint = bigint, > = readonly [T, T, T, T, T, T, T, T, T,]
+export type BigIntArrayOf9<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 10 {@link BigInt}
  *
@@ -538,7 +538,7 @@ export type BigIntArrayOf9<T extends bigint = bigint, > = readonly [T, T, T, T, 
  * @see BigIntArrayOf10
  * @see BigIntArrayOf10
  */
-export type BigIntArrayOf10<T extends bigint = bigint, > = readonly [T, T, T, T, T, T, T, T, T, T,]
+export type BigIntArrayOf10<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 
 /**
@@ -560,7 +560,7 @@ export type SymbolArrayOf1<T extends Symbol = Symbol, > = readonly [T,]
  * @see JavascriptSymbolArrayOf2
  * @see TypescriptSymbolArrayOf3
  */
-export type SymbolArrayOf2<T extends Symbol = Symbol, > = readonly [T, T,]
+export type SymbolArrayOf2<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, > = readonly [T1, T2,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 3 {@link Symbol}
  *
@@ -570,7 +570,7 @@ export type SymbolArrayOf2<T extends Symbol = Symbol, > = readonly [T, T,]
  * @see JavascriptSymbolArrayOf3
  * @see TypescriptSymbolArrayOf3
  */
-export type SymbolArrayOf3<T extends Symbol = Symbol, > = readonly [T, T, T,]
+export type SymbolArrayOf3<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = readonly [T1, T2, T3,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 4 {@link Symbol}
  *
@@ -580,7 +580,7 @@ export type SymbolArrayOf3<T extends Symbol = Symbol, > = readonly [T, T, T,]
  * @see JavascriptSymbolArrayOf4
  * @see TypescriptSymbolArrayOf4
  */
-export type SymbolArrayOf4<T extends Symbol = Symbol, > = readonly [T, T, T, T,]
+export type SymbolArrayOf4<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = readonly [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 5 {@link Symbol}
  *
@@ -590,7 +590,7 @@ export type SymbolArrayOf4<T extends Symbol = Symbol, > = readonly [T, T, T, T,]
  * @see JavascriptSymbolArrayOf5
  * @see TypescriptSymbolArrayOf5
  */
-export type SymbolArrayOf5<T extends Symbol = Symbol, > = readonly [T, T, T, T, T,]
+export type SymbolArrayOf5<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = readonly [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 6 {@link Symbol}
  *
@@ -600,7 +600,7 @@ export type SymbolArrayOf5<T extends Symbol = Symbol, > = readonly [T, T, T, T, 
  * @see JavascriptSymbolArrayOf6
  * @see TypescriptSymbolArrayOf6
  */
-export type SymbolArrayOf6<T extends Symbol = Symbol, > = readonly [T, T, T, T, T, T,]
+export type SymbolArrayOf6<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 7 {@link Symbol}
  *
@@ -610,7 +610,7 @@ export type SymbolArrayOf6<T extends Symbol = Symbol, > = readonly [T, T, T, T, 
  * @see JavascriptSymbolArrayOf7
  * @see TypescriptSymbolArrayOf7
  */
-export type SymbolArrayOf7<T extends Symbol = Symbol, > = readonly [T, T, T, T, T, T, T,]
+export type SymbolArrayOf7<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 8 {@link Symbol}
  *
@@ -620,7 +620,7 @@ export type SymbolArrayOf7<T extends Symbol = Symbol, > = readonly [T, T, T, T, 
  * @see JavascriptSymbolArrayOf8
  * @see TypescriptSymbolArrayOf8
  */
-export type SymbolArrayOf8<T extends Symbol = Symbol, > = readonly [T, T, T, T, T, T, T, T,]
+export type SymbolArrayOf8<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 9 {@link Symbol}
  *
@@ -630,7 +630,7 @@ export type SymbolArrayOf8<T extends Symbol = Symbol, > = readonly [T, T, T, T, 
  * @see JavascriptSymbolArrayOf9
  * @see TypescriptSymbolArrayOf9
  */
-export type SymbolArrayOf9<T extends Symbol = Symbol, > = readonly [T, T, T, T, T, T, T, T, T,]
+export type SymbolArrayOf9<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 10 {@link Symbol}
  *
@@ -640,7 +640,7 @@ export type SymbolArrayOf9<T extends Symbol = Symbol, > = readonly [T, T, T, T, 
  * @see JavascriptSymbolArrayOf10
  * @see TypescriptSymbolArrayOf10
  */
-export type SymbolArrayOf10<T extends Symbol = Symbol, > = readonly [T, T, T, T, T, T, T, T, T, T,]
+export type SymbolArrayOf10<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 1 official Javascript {@link Symbol}
@@ -661,7 +661,7 @@ export type JavascriptSymbolArrayOf1<T extends JavascriptSymbol = JavascriptSymb
  * @see JavascriptSymbolArrayOf2
  * @see TypescriptSymbolArrayOf3
  */
-export type JavascriptSymbolArrayOf2<T extends JavascriptSymbol = JavascriptSymbol, > = readonly [T, T,]
+export type JavascriptSymbolArrayOf2<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, > = readonly [T1, T2,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 3 official Javascript {@link Symbol}
  *
@@ -671,7 +671,7 @@ export type JavascriptSymbolArrayOf2<T extends JavascriptSymbol = JavascriptSymb
  * @see JavascriptSymbolArrayOf3
  * @see TypescriptSymbolArrayOf3
  */
-export type JavascriptSymbolArrayOf3<T extends JavascriptSymbol = JavascriptSymbol, > = readonly [T, T, T,]
+export type JavascriptSymbolArrayOf3<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = readonly [T1, T2, T3,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 4 official Javascript {@link Symbol}
  *
@@ -681,7 +681,7 @@ export type JavascriptSymbolArrayOf3<T extends JavascriptSymbol = JavascriptSymb
  * @see JavascriptSymbolArrayOf4
  * @see TypescriptSymbolArrayOf4
  */
-export type JavascriptSymbolArrayOf4<T extends JavascriptSymbol = JavascriptSymbol, > = readonly [T, T, T, T,]
+export type JavascriptSymbolArrayOf4<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = readonly [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 5 official Javascript {@link Symbol}
  *
@@ -691,7 +691,7 @@ export type JavascriptSymbolArrayOf4<T extends JavascriptSymbol = JavascriptSymb
  * @see JavascriptSymbolArrayOf5
  * @see TypescriptSymbolArrayOf5
  */
-export type JavascriptSymbolArrayOf5<T extends JavascriptSymbol = JavascriptSymbol, > = readonly [T, T, T, T, T,]
+export type JavascriptSymbolArrayOf5<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = readonly [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 6 official Javascript {@link Symbol}
  *
@@ -701,7 +701,7 @@ export type JavascriptSymbolArrayOf5<T extends JavascriptSymbol = JavascriptSymb
  * @see JavascriptSymbolArrayOf6
  * @see TypescriptSymbolArrayOf6
  */
-export type JavascriptSymbolArrayOf6<T extends JavascriptSymbol = JavascriptSymbol, > = readonly [T, T, T, T, T, T,]
+export type JavascriptSymbolArrayOf6<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 7 official Javascript {@link Symbol}
  *
@@ -711,7 +711,7 @@ export type JavascriptSymbolArrayOf6<T extends JavascriptSymbol = JavascriptSymb
  * @see JavascriptSymbolArrayOf7
  * @see TypescriptSymbolArrayOf7
  */
-export type JavascriptSymbolArrayOf7<T extends JavascriptSymbol = JavascriptSymbol, > = readonly [T, T, T, T, T, T, T,]
+export type JavascriptSymbolArrayOf7<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 8 official Javascript {@link Symbol}
  *
@@ -721,7 +721,7 @@ export type JavascriptSymbolArrayOf7<T extends JavascriptSymbol = JavascriptSymb
  * @see JavascriptSymbolArrayOf8
  * @see TypescriptSymbolArrayOf8
  */
-export type JavascriptSymbolArrayOf8<T extends JavascriptSymbol = JavascriptSymbol, > = readonly [T, T, T, T, T, T, T, T,]
+export type JavascriptSymbolArrayOf8<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 9 official Javascript {@link Symbol}
  *
@@ -731,7 +731,7 @@ export type JavascriptSymbolArrayOf8<T extends JavascriptSymbol = JavascriptSymb
  * @see JavascriptSymbolArrayOf9
  * @see TypescriptSymbolArrayOf9
  */
-export type JavascriptSymbolArrayOf9<T extends JavascriptSymbol = JavascriptSymbol, > = readonly [T, T, T, T, T, T, T, T, T,]
+export type JavascriptSymbolArrayOf9<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 10 official Javascript {@link Symbol}
  *
@@ -741,7 +741,7 @@ export type JavascriptSymbolArrayOf9<T extends JavascriptSymbol = JavascriptSymb
  * @see JavascriptSymbolArrayOf10
  * @see TypescriptSymbolArrayOf10
  */
-export type JavascriptSymbolArrayOf10<T extends JavascriptSymbol = JavascriptSymbol, > = readonly [T, T, T, T, T, T, T, T, T, T,]
+export type JavascriptSymbolArrayOf10<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 1 official Typescript {@link Symbol}
@@ -762,7 +762,7 @@ export type TypescriptSymbolArrayOf1<T extends TypescriptSymbol = TypescriptSymb
  * @see TypescriptSymbolArrayOf2
  * @see TypescriptSymbolArrayOf3
  */
-export type TypescriptSymbolArrayOf2<T extends TypescriptSymbol = TypescriptSymbol, > = readonly [T, T,]
+export type TypescriptSymbolArrayOf2<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, > = readonly [T1, T2,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 3 official Typescript {@link Symbol}
  *
@@ -772,7 +772,7 @@ export type TypescriptSymbolArrayOf2<T extends TypescriptSymbol = TypescriptSymb
  * @see TypescriptSymbolArrayOf3
  * @see TypescriptSymbolArrayOf3
  */
-export type TypescriptSymbolArrayOf3<T extends TypescriptSymbol = TypescriptSymbol, > = readonly [T, T, T,]
+export type TypescriptSymbolArrayOf3<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = readonly [T1, T2, T3,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 4 official Typescript {@link Symbol}
  *
@@ -782,7 +782,7 @@ export type TypescriptSymbolArrayOf3<T extends TypescriptSymbol = TypescriptSymb
  * @see TypescriptSymbolArrayOf4
  * @see TypescriptSymbolArrayOf4
  */
-export type TypescriptSymbolArrayOf4<T extends TypescriptSymbol = TypescriptSymbol, > = readonly [T, T, T, T,]
+export type TypescriptSymbolArrayOf4<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = readonly [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 5 official Typescript {@link Symbol}
  *
@@ -792,7 +792,7 @@ export type TypescriptSymbolArrayOf4<T extends TypescriptSymbol = TypescriptSymb
  * @see TypescriptSymbolArrayOf5
  * @see TypescriptSymbolArrayOf5
  */
-export type TypescriptSymbolArrayOf5<T extends TypescriptSymbol = TypescriptSymbol, > = readonly [T, T, T, T, T,]
+export type TypescriptSymbolArrayOf5<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = readonly [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 6 official Typescript {@link Symbol}
  *
@@ -802,7 +802,7 @@ export type TypescriptSymbolArrayOf5<T extends TypescriptSymbol = TypescriptSymb
  * @see TypescriptSymbolArrayOf6
  * @see TypescriptSymbolArrayOf6
  */
-export type TypescriptSymbolArrayOf6<T extends TypescriptSymbol = TypescriptSymbol, > = readonly [T, T, T, T, T, T,]
+export type TypescriptSymbolArrayOf6<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 7 official Typescript {@link Symbol}
  *
@@ -812,7 +812,7 @@ export type TypescriptSymbolArrayOf6<T extends TypescriptSymbol = TypescriptSymb
  * @see TypescriptSymbolArrayOf7
  * @see TypescriptSymbolArrayOf7
  */
-export type TypescriptSymbolArrayOf7<T extends TypescriptSymbol = TypescriptSymbol, > = readonly [T, T, T, T, T, T, T,]
+export type TypescriptSymbolArrayOf7<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 8 official Typescript {@link Symbol}
  *
@@ -822,7 +822,7 @@ export type TypescriptSymbolArrayOf7<T extends TypescriptSymbol = TypescriptSymb
  * @see TypescriptSymbolArrayOf8
  * @see TypescriptSymbolArrayOf8
  */
-export type TypescriptSymbolArrayOf8<T extends TypescriptSymbol = TypescriptSymbol, > = readonly [T, T, T, T, T, T, T, T,]
+export type TypescriptSymbolArrayOf8<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 9 official Typescript {@link Symbol}
  *
@@ -832,7 +832,7 @@ export type TypescriptSymbolArrayOf8<T extends TypescriptSymbol = TypescriptSymb
  * @see TypescriptSymbolArrayOf9
  * @see TypescriptSymbolArrayOf9
  */
-export type TypescriptSymbolArrayOf9<T extends TypescriptSymbol = TypescriptSymbol, > = readonly [T, T, T, T, T, T, T, T, T,]
+export type TypescriptSymbolArrayOf9<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link ReadonlyArray Array} of 10 official Typescript {@link Symbol}
  *
@@ -842,4 +842,4 @@ export type TypescriptSymbolArrayOf9<T extends TypescriptSymbol = TypescriptSymb
  * @see TypescriptSymbolArrayOf10
  * @see TypescriptSymbolArrayOf10
  */
-export type TypescriptSymbolArrayOf10<T extends TypescriptSymbol = TypescriptSymbol, > = readonly [T, T, T, T, T, T, T, T, T, T,]
+export type TypescriptSymbolArrayOf10<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = readonly [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]

@@ -40,7 +40,7 @@ export type MutableArrayOf1<T, > = [T,]
  * @see MutableJavascriptSymbolArrayOf2
  * @see MutableTypescriptSymbolArrayOf2
  */
-export type MutableArrayOf2<T, > = [T, T,]
+export type MutableArrayOf2<T, T1 extends T = T, T2 extends T = T, > = [T1, T2,]
 /**
  * A type-alias for an {@link Array MutableArray} of 3 {@link Boolean}
  *
@@ -54,7 +54,7 @@ export type MutableArrayOf2<T, > = [T, T,]
  * @see MutableJavascriptSymbolArrayOf3
  * @see MutableTypescriptSymbolArrayOf3
  */
-export type MutableArrayOf3<T, > = [T, T, T,]
+export type MutableArrayOf3<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = [T1, T2, T3,]
 /**
  * A type-alias for an {@link Array MutableArray} of 4 {@link Boolean}
  *
@@ -68,7 +68,7 @@ export type MutableArrayOf3<T, > = [T, T, T,]
  * @see MutableJavascriptSymbolArrayOf4
  * @see MutableTypescriptSymbolArrayOf4
  */
-export type MutableArrayOf4<T, > = [T, T, T, T,]
+export type MutableArrayOf4<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link Array MutableArray} of 5 {@link Boolean}
  *
@@ -82,7 +82,7 @@ export type MutableArrayOf4<T, > = [T, T, T, T,]
  * @see MutableJavascriptSymbolArrayOf5
  * @see MutableTypescriptSymbolArrayOf5
  */
-export type MutableArrayOf5<T, > = [T, T, T, T, T,]
+export type MutableArrayOf5<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link Array MutableArray} of 6 {@link Boolean}
  *
@@ -96,7 +96,7 @@ export type MutableArrayOf5<T, > = [T, T, T, T, T,]
  * @see MutableJavascriptSymbolArrayOf6
  * @see MutableTypescriptSymbolArrayOf6
  */
-export type MutableArrayOf6<T, > = [T, T, T, T, T, T,]
+export type MutableArrayOf6<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link Array MutableArray} of 7 {@link Boolean}
  *
@@ -110,7 +110,7 @@ export type MutableArrayOf6<T, > = [T, T, T, T, T, T,]
  * @see MutableJavascriptSymbolArrayOf7
  * @see MutableTypescriptSymbolArrayOf7
  */
-export type MutableArrayOf7<T, > = [T, T, T, T, T, T, T,]
+export type MutableArrayOf7<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link Array MutableArray} of 8 {@link Boolean}
  *
@@ -124,7 +124,7 @@ export type MutableArrayOf7<T, > = [T, T, T, T, T, T, T,]
  * @see MutableJavascriptSymbolArrayOf8
  * @see MutableTypescriptSymbolArrayOf8
  */
-export type MutableArrayOf8<T, > = [T, T, T, T, T, T, T, T,]
+export type MutableArrayOf8<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link Array MutableArray} of 9 {@link Boolean}
  *
@@ -138,7 +138,7 @@ export type MutableArrayOf8<T, > = [T, T, T, T, T, T, T, T,]
  * @see MutableJavascriptSymbolArrayOf9
  * @see MutableTypescriptSymbolArrayOf9
  */
-export type MutableArrayOf9<T, > = [T, T, T, T, T, T, T, T, T,]
+export type MutableArrayOf9<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link Array MutableArray} of 10 {@link Boolean}
  *
@@ -152,7 +152,7 @@ export type MutableArrayOf9<T, > = [T, T, T, T, T, T, T, T, T,]
  * @see MutableJavascriptSymbolArrayOf10
  * @see MutableTypescriptSymbolArrayOf10
  */
-export type MutableArrayOf10<T, > = [T, T, T, T, T, T, T, T, T, T,]
+export type MutableArrayOf10<T, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 
 /**
@@ -170,7 +170,7 @@ export type MutableBooleanArrayOf1<T extends boolean = boolean, > = [T,]
  * @see import('collection (mutable array)').MutableBooleanArray
  * @see MutableArrayOf2
  */
-export type MutableBooleanArrayOf2<T extends boolean = boolean, > = [T, T,]
+export type MutableBooleanArrayOf2<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, > = [T1, T2,]
 /**
  * A type-alias for an {@link Array MutableArray} of 3 {@link Boolean}
  *
@@ -178,7 +178,7 @@ export type MutableBooleanArrayOf2<T extends boolean = boolean, > = [T, T,]
  * @see import('collection (mutable array)').MutableBooleanArray
  * @see MutableArrayOf3
  */
-export type MutableBooleanArrayOf3<T extends boolean = boolean, > = [T, T, T,]
+export type MutableBooleanArrayOf3<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = [T1, T2, T3,]
 /**
  * A type-alias for an {@link Array MutableArray} of 4 {@link Boolean}
  *
@@ -186,7 +186,7 @@ export type MutableBooleanArrayOf3<T extends boolean = boolean, > = [T, T, T,]
  * @see import('collection (mutable array)').MutableBooleanArray
  * @see MutableArrayOf4
  */
-export type MutableBooleanArrayOf4<T extends boolean = boolean, > = [T, T, T, T,]
+export type MutableBooleanArrayOf4<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link Array MutableArray} of 5 {@link Boolean}
  *
@@ -194,7 +194,7 @@ export type MutableBooleanArrayOf4<T extends boolean = boolean, > = [T, T, T, T,
  * @see import('collection (mutable array)').MutableBooleanArray
  * @see MutableArrayOf5
  */
-export type MutableBooleanArrayOf5<T extends boolean = boolean, > = [T, T, T, T, T,]
+export type MutableBooleanArrayOf5<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link Array MutableArray} of 6 {@link Boolean}
  *
@@ -202,7 +202,7 @@ export type MutableBooleanArrayOf5<T extends boolean = boolean, > = [T, T, T, T,
  * @see import('collection (mutable array)').MutableBooleanArray
  * @see MutableArrayOf6
  */
-export type MutableBooleanArrayOf6<T extends boolean = boolean, > = [T, T, T, T, T, T,]
+export type MutableBooleanArrayOf6<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link Array MutableArray} of 7 {@link Boolean}
  *
@@ -210,7 +210,7 @@ export type MutableBooleanArrayOf6<T extends boolean = boolean, > = [T, T, T, T,
  * @see import('collection (mutable array)').MutableBooleanArray
  * @see MutableArrayOf7
  */
-export type MutableBooleanArrayOf7<T extends boolean = boolean, > = [T, T, T, T, T, T, T,]
+export type MutableBooleanArrayOf7<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link Array MutableArray} of 8 {@link Boolean}
  *
@@ -218,7 +218,7 @@ export type MutableBooleanArrayOf7<T extends boolean = boolean, > = [T, T, T, T,
  * @see import('collection (mutable array)').MutableBooleanArray
  * @see MutableArrayOf8
  */
-export type MutableBooleanArrayOf8<T extends boolean = boolean, > = [T, T, T, T, T, T, T, T,]
+export type MutableBooleanArrayOf8<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link Array MutableArray} of 9 {@link Boolean}
  *
@@ -226,7 +226,7 @@ export type MutableBooleanArrayOf8<T extends boolean = boolean, > = [T, T, T, T,
  * @see import('collection (mutable array)').MutableBooleanArray
  * @see MutableArrayOf9
  */
-export type MutableBooleanArrayOf9<T extends boolean = boolean, > = [T, T, T, T, T, T, T, T, T,]
+export type MutableBooleanArrayOf9<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link Array MutableArray} of 10 {@link Boolean}
  *
@@ -234,7 +234,7 @@ export type MutableBooleanArrayOf9<T extends boolean = boolean, > = [T, T, T, T,
  * @see import('collection (mutable array)').MutableBooleanArray
  * @see MutableArrayOf10
  */
-export type MutableBooleanArrayOf10<T extends boolean = boolean, > = [T, T, T, T, T, T, T, T, T, T,]
+export type MutableBooleanArrayOf10<T extends boolean = boolean, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 
 /**
@@ -256,7 +256,7 @@ export type MutableNumericArrayOf1<T extends Numeric = Numeric, > = [T,]
  * @see MutableNumberArrayOf2
  * @see MutableBigIntArrayOf3
  */
-export type MutableNumericArrayOf2<T extends Numeric = Numeric, > = [T, T,]
+export type MutableNumericArrayOf2<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, > = [T1, T2,]
 /**
  * A type-alias for an {@link Array MutableArray} of 3 {@link Number} or {@link BigInt}
  *
@@ -266,7 +266,7 @@ export type MutableNumericArrayOf2<T extends Numeric = Numeric, > = [T, T,]
  * @see MutableNumberArrayOf3
  * @see MutableBigIntArrayOf3
  */
-export type MutableNumericArrayOf3<T extends Numeric = Numeric, > = [T, T, T,]
+export type MutableNumericArrayOf3<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = [T1, T2, T3,]
 /**
  * A type-alias for an {@link Array MutableArray} of 4 {@link Number} or {@link BigInt}
  *
@@ -276,7 +276,7 @@ export type MutableNumericArrayOf3<T extends Numeric = Numeric, > = [T, T, T,]
  * @see MutableNumberArrayOf4
  * @see MutableBigIntArrayOf4
  */
-export type MutableNumericArrayOf4<T extends Numeric = Numeric, > = [T, T, T, T,]
+export type MutableNumericArrayOf4<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link Array MutableArray} of 5 {@link Number} or {@link BigInt}
  *
@@ -286,7 +286,7 @@ export type MutableNumericArrayOf4<T extends Numeric = Numeric, > = [T, T, T, T,
  * @see MutableNumberArrayOf5
  * @see MutableBigIntArrayOf5
  */
-export type MutableNumericArrayOf5<T extends Numeric = Numeric, > = [T, T, T, T, T,]
+export type MutableNumericArrayOf5<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link Array MutableArray} of 6 {@link Number} or {@link BigInt}
  *
@@ -296,7 +296,7 @@ export type MutableNumericArrayOf5<T extends Numeric = Numeric, > = [T, T, T, T,
  * @see MutableNumberArrayOf6
  * @see MutableBigIntArrayOf6
  */
-export type MutableNumericArrayOf6<T extends Numeric = Numeric, > = [T, T, T, T, T, T,]
+export type MutableNumericArrayOf6<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link Array MutableArray} of 7 {@link Number} or {@link BigInt}
  *
@@ -306,7 +306,7 @@ export type MutableNumericArrayOf6<T extends Numeric = Numeric, > = [T, T, T, T,
  * @see MutableNumberArrayOf7
  * @see MutableBigIntArrayOf7
  */
-export type MutableNumericArrayOf7<T extends Numeric = Numeric, > = [T, T, T, T, T, T, T,]
+export type MutableNumericArrayOf7<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link Array MutableArray} of 8 {@link Number} or {@link BigInt}
  *
@@ -316,7 +316,7 @@ export type MutableNumericArrayOf7<T extends Numeric = Numeric, > = [T, T, T, T,
  * @see MutableNumberArrayOf8
  * @see MutableBigIntArrayOf8
  */
-export type MutableNumericArrayOf8<T extends Numeric = Numeric, > = [T, T, T, T, T, T, T, T,]
+export type MutableNumericArrayOf8<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link Array MutableArray} of 9 {@link Number} or {@link BigInt}
  *
@@ -326,7 +326,7 @@ export type MutableNumericArrayOf8<T extends Numeric = Numeric, > = [T, T, T, T,
  * @see MutableNumberArrayOf9
  * @see MutableBigIntArrayOf9
  */
-export type MutableNumericArrayOf9<T extends Numeric = Numeric, > = [T, T, T, T, T, T, T, T, T,]
+export type MutableNumericArrayOf9<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link Array MutableArray} of 10 {@link Number} or {@link BigInt}
  *
@@ -336,7 +336,7 @@ export type MutableNumericArrayOf9<T extends Numeric = Numeric, > = [T, T, T, T,
  * @see MutableNumberArrayOf10
  * @see MutableBigIntArrayOf10
  */
-export type MutableNumericArrayOf10<T extends Numeric = Numeric, > = [T, T, T, T, T, T, T, T, T, T,]
+export type MutableNumericArrayOf10<T extends Numeric = Numeric, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 /**
  * A type-alias for an {@link Array MutableArray} of 1 {@link Number}
@@ -357,7 +357,7 @@ export type MutableNumberArrayOf1<T extends number = number, > = [T,]
  * @see MutableNumberArrayOf2
  * @see MutableBigIntArrayOf3
  */
-export type MutableNumberArrayOf2<T extends number = number, > = [T, T,]
+export type MutableNumberArrayOf2<T extends number = number, T1 extends T = T, T2 extends T = T, > = [T1, T2,]
 /**
  * A type-alias for an {@link Array MutableArray} of 3 {@link Number}
  *
@@ -367,7 +367,7 @@ export type MutableNumberArrayOf2<T extends number = number, > = [T, T,]
  * @see MutableNumberArrayOf3
  * @see MutableBigIntArrayOf3
  */
-export type MutableNumberArrayOf3<T extends number = number, > = [T, T, T,]
+export type MutableNumberArrayOf3<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = [T1, T2, T3,]
 /**
  * A type-alias for an {@link Array MutableArray} of 4 {@link Number}
  *
@@ -377,7 +377,7 @@ export type MutableNumberArrayOf3<T extends number = number, > = [T, T, T,]
  * @see MutableNumberArrayOf4
  * @see MutableBigIntArrayOf4
  */
-export type MutableNumberArrayOf4<T extends number = number, > = [T, T, T, T,]
+export type MutableNumberArrayOf4<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link Array MutableArray} of 5 {@link Number}
  *
@@ -387,7 +387,7 @@ export type MutableNumberArrayOf4<T extends number = number, > = [T, T, T, T,]
  * @see MutableNumberArrayOf5
  * @see MutableBigIntArrayOf5
  */
-export type MutableNumberArrayOf5<T extends number = number, > = [T, T, T, T, T,]
+export type MutableNumberArrayOf5<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link Array MutableArray} of 6 {@link Number}
  *
@@ -397,7 +397,7 @@ export type MutableNumberArrayOf5<T extends number = number, > = [T, T, T, T, T,
  * @see MutableNumberArrayOf6
  * @see MutableBigIntArrayOf6
  */
-export type MutableNumberArrayOf6<T extends number = number, > = [T, T, T, T, T, T,]
+export type MutableNumberArrayOf6<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link Array MutableArray} of 7 {@link Number}
  *
@@ -407,7 +407,7 @@ export type MutableNumberArrayOf6<T extends number = number, > = [T, T, T, T, T,
  * @see MutableNumberArrayOf7
  * @see MutableBigIntArrayOf7
  */
-export type MutableNumberArrayOf7<T extends number = number, > = [T, T, T, T, T, T, T,]
+export type MutableNumberArrayOf7<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link Array MutableArray} of 8 {@link Number}
  *
@@ -417,7 +417,7 @@ export type MutableNumberArrayOf7<T extends number = number, > = [T, T, T, T, T,
  * @see MutableNumberArrayOf8
  * @see MutableBigIntArrayOf8
  */
-export type MutableNumberArrayOf8<T extends number = number, > = [T, T, T, T, T, T, T, T,]
+export type MutableNumberArrayOf8<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link Array MutableArray} of 9 {@link Number}
  *
@@ -427,7 +427,7 @@ export type MutableNumberArrayOf8<T extends number = number, > = [T, T, T, T, T,
  * @see MutableNumberArrayOf9
  * @see MutableBigIntArrayOf9
  */
-export type MutableNumberArrayOf9<T extends number = number, > = [T, T, T, T, T, T, T, T, T,]
+export type MutableNumberArrayOf9<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link Array MutableArray} of 10 {@link Number}
  *
@@ -437,7 +437,7 @@ export type MutableNumberArrayOf9<T extends number = number, > = [T, T, T, T, T,
  * @see MutableNumberArrayOf10
  * @see MutableBigIntArrayOf10
  */
-export type MutableNumberArrayOf10<T extends number = number, > = [T, T, T, T, T, T, T, T, T, T,]
+export type MutableNumberArrayOf10<T extends number = number, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 /**
  * A type-alias for an {@link Array MutableArray} of 1 {@link BigInt}
@@ -458,7 +458,7 @@ export type MutableBigIntArrayOf1<T extends bigint = bigint, > = [T,]
  * @see MutableBigIntArrayOf2
  * @see MutableBigIntArrayOf3
  */
-export type MutableBigIntArrayOf2<T extends bigint = bigint, > = [T, T,]
+export type MutableBigIntArrayOf2<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, > = [T1, T2,]
 /**
  * A type-alias for an {@link Array MutableArray} of 3 {@link BigInt}
  *
@@ -468,7 +468,7 @@ export type MutableBigIntArrayOf2<T extends bigint = bigint, > = [T, T,]
  * @see MutableBigIntArrayOf3
  * @see MutableBigIntArrayOf3
  */
-export type MutableBigIntArrayOf3<T extends bigint = bigint, > = [T, T, T,]
+export type MutableBigIntArrayOf3<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = [T1, T2, T3,]
 /**
  * A type-alias for an {@link Array MutableArray} of 4 {@link BigInt}
  *
@@ -478,7 +478,7 @@ export type MutableBigIntArrayOf3<T extends bigint = bigint, > = [T, T, T,]
  * @see MutableBigIntArrayOf4
  * @see MutableBigIntArrayOf4
  */
-export type MutableBigIntArrayOf4<T extends bigint = bigint, > = [T, T, T, T,]
+export type MutableBigIntArrayOf4<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link Array MutableArray} of 5 {@link BigInt}
  *
@@ -488,7 +488,7 @@ export type MutableBigIntArrayOf4<T extends bigint = bigint, > = [T, T, T, T,]
  * @see MutableBigIntArrayOf5
  * @see MutableBigIntArrayOf5
  */
-export type MutableBigIntArrayOf5<T extends bigint = bigint, > = [T, T, T, T, T,]
+export type MutableBigIntArrayOf5<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link Array MutableArray} of 6 {@link BigInt}
  *
@@ -498,7 +498,7 @@ export type MutableBigIntArrayOf5<T extends bigint = bigint, > = [T, T, T, T, T,
  * @see MutableBigIntArrayOf6
  * @see MutableBigIntArrayOf6
  */
-export type MutableBigIntArrayOf6<T extends bigint = bigint, > = [T, T, T, T, T, T,]
+export type MutableBigIntArrayOf6<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link Array MutableArray} of 7 {@link BigInt}
  *
@@ -508,7 +508,7 @@ export type MutableBigIntArrayOf6<T extends bigint = bigint, > = [T, T, T, T, T,
  * @see MutableBigIntArrayOf7
  * @see MutableBigIntArrayOf7
  */
-export type MutableBigIntArrayOf7<T extends bigint = bigint, > = [T, T, T, T, T, T, T,]
+export type MutableBigIntArrayOf7<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link Array MutableArray} of 8 {@link BigInt}
  *
@@ -518,7 +518,7 @@ export type MutableBigIntArrayOf7<T extends bigint = bigint, > = [T, T, T, T, T,
  * @see MutableBigIntArrayOf8
  * @see MutableBigIntArrayOf8
  */
-export type MutableBigIntArrayOf8<T extends bigint = bigint, > = [T, T, T, T, T, T, T, T,]
+export type MutableBigIntArrayOf8<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link Array MutableArray} of 9 {@link BigInt}
  *
@@ -528,7 +528,7 @@ export type MutableBigIntArrayOf8<T extends bigint = bigint, > = [T, T, T, T, T,
  * @see MutableBigIntArrayOf9
  * @see MutableBigIntArrayOf9
  */
-export type MutableBigIntArrayOf9<T extends bigint = bigint, > = [T, T, T, T, T, T, T, T, T,]
+export type MutableBigIntArrayOf9<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link Array MutableArray} of 10 {@link BigInt}
  *
@@ -538,7 +538,7 @@ export type MutableBigIntArrayOf9<T extends bigint = bigint, > = [T, T, T, T, T,
  * @see MutableBigIntArrayOf10
  * @see MutableBigIntArrayOf10
  */
-export type MutableBigIntArrayOf10<T extends bigint = bigint, > = [T, T, T, T, T, T, T, T, T, T,]
+export type MutableBigIntArrayOf10<T extends bigint = bigint, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 
 /**
@@ -560,7 +560,7 @@ export type MutableSymbolArrayOf1<T extends Symbol = Symbol, > = [T,]
  * @see MutableJavascriptSymbolArrayOf2
  * @see MutableTypescriptSymbolArrayOf3
  */
-export type MutableSymbolArrayOf2<T extends Symbol = Symbol, > = [T, T,]
+export type MutableSymbolArrayOf2<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, > = [T1, T2,]
 /**
  * A type-alias for an {@link Array MutableArray} of 3 {@link Symbol}
  *
@@ -570,7 +570,7 @@ export type MutableSymbolArrayOf2<T extends Symbol = Symbol, > = [T, T,]
  * @see MutableJavascriptSymbolArrayOf3
  * @see MutableTypescriptSymbolArrayOf3
  */
-export type MutableSymbolArrayOf3<T extends Symbol = Symbol, > = [T, T, T,]
+export type MutableSymbolArrayOf3<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = [T1, T2, T3,]
 /**
  * A type-alias for an {@link Array MutableArray} of 4 {@link Symbol}
  *
@@ -580,7 +580,7 @@ export type MutableSymbolArrayOf3<T extends Symbol = Symbol, > = [T, T, T,]
  * @see MutableJavascriptSymbolArrayOf4
  * @see MutableTypescriptSymbolArrayOf4
  */
-export type MutableSymbolArrayOf4<T extends Symbol = Symbol, > = [T, T, T, T,]
+export type MutableSymbolArrayOf4<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link Array MutableArray} of 5 {@link Symbol}
  *
@@ -590,7 +590,7 @@ export type MutableSymbolArrayOf4<T extends Symbol = Symbol, > = [T, T, T, T,]
  * @see MutableJavascriptSymbolArrayOf5
  * @see MutableTypescriptSymbolArrayOf5
  */
-export type MutableSymbolArrayOf5<T extends Symbol = Symbol, > = [T, T, T, T, T,]
+export type MutableSymbolArrayOf5<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link Array MutableArray} of 6 {@link Symbol}
  *
@@ -600,7 +600,7 @@ export type MutableSymbolArrayOf5<T extends Symbol = Symbol, > = [T, T, T, T, T,
  * @see MutableJavascriptSymbolArrayOf6
  * @see MutableTypescriptSymbolArrayOf6
  */
-export type MutableSymbolArrayOf6<T extends Symbol = Symbol, > = [T, T, T, T, T, T,]
+export type MutableSymbolArrayOf6<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link Array MutableArray} of 7 {@link Symbol}
  *
@@ -610,7 +610,7 @@ export type MutableSymbolArrayOf6<T extends Symbol = Symbol, > = [T, T, T, T, T,
  * @see MutableJavascriptSymbolArrayOf7
  * @see MutableTypescriptSymbolArrayOf7
  */
-export type MutableSymbolArrayOf7<T extends Symbol = Symbol, > = [T, T, T, T, T, T, T,]
+export type MutableSymbolArrayOf7<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link Array MutableArray} of 8 {@link Symbol}
  *
@@ -620,7 +620,7 @@ export type MutableSymbolArrayOf7<T extends Symbol = Symbol, > = [T, T, T, T, T,
  * @see MutableJavascriptSymbolArrayOf8
  * @see MutableTypescriptSymbolArrayOf8
  */
-export type MutableSymbolArrayOf8<T extends Symbol = Symbol, > = [T, T, T, T, T, T, T, T,]
+export type MutableSymbolArrayOf8<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link Array MutableArray} of 9 {@link Symbol}
  *
@@ -630,7 +630,7 @@ export type MutableSymbolArrayOf8<T extends Symbol = Symbol, > = [T, T, T, T, T,
  * @see MutableJavascriptSymbolArrayOf9
  * @see MutableTypescriptSymbolArrayOf9
  */
-export type MutableSymbolArrayOf9<T extends Symbol = Symbol, > = [T, T, T, T, T, T, T, T, T,]
+export type MutableSymbolArrayOf9<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link Array MutableArray} of 10 {@link Symbol}
  *
@@ -640,7 +640,7 @@ export type MutableSymbolArrayOf9<T extends Symbol = Symbol, > = [T, T, T, T, T,
  * @see MutableJavascriptSymbolArrayOf10
  * @see MutableTypescriptSymbolArrayOf10
  */
-export type MutableSymbolArrayOf10<T extends Symbol = Symbol, > = [T, T, T, T, T, T, T, T, T, T,]
+export type MutableSymbolArrayOf10<T extends Symbol = Symbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 /**
  * A type-alias for an {@link Array MutableArray} of 1 official Javascript {@link Symbol}
@@ -661,7 +661,7 @@ export type MutableJavascriptSymbolArrayOf1<T extends JavascriptSymbol = Javascr
  * @see MutableJavascriptSymbolArrayOf2
  * @see MutableTypescriptSymbolArrayOf3
  */
-export type MutableJavascriptSymbolArrayOf2<T extends JavascriptSymbol = JavascriptSymbol, > = [T, T,]
+export type MutableJavascriptSymbolArrayOf2<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, > = [T1, T2,]
 /**
  * A type-alias for an {@link Array MutableArray} of 3 official Javascript {@link Symbol}
  *
@@ -671,7 +671,7 @@ export type MutableJavascriptSymbolArrayOf2<T extends JavascriptSymbol = Javascr
  * @see MutableJavascriptSymbolArrayOf3
  * @see MutableTypescriptSymbolArrayOf3
  */
-export type MutableJavascriptSymbolArrayOf3<T extends JavascriptSymbol = JavascriptSymbol, > = [T, T, T,]
+export type MutableJavascriptSymbolArrayOf3<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = [T1, T2, T3,]
 /**
  * A type-alias for an {@link Array MutableArray} of 4 official Javascript {@link Symbol}
  *
@@ -681,7 +681,7 @@ export type MutableJavascriptSymbolArrayOf3<T extends JavascriptSymbol = Javascr
  * @see MutableJavascriptSymbolArrayOf4
  * @see MutableTypescriptSymbolArrayOf4
  */
-export type MutableJavascriptSymbolArrayOf4<T extends JavascriptSymbol = JavascriptSymbol, > = [T, T, T, T,]
+export type MutableJavascriptSymbolArrayOf4<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link Array MutableArray} of 5 official Javascript {@link Symbol}
  *
@@ -691,7 +691,7 @@ export type MutableJavascriptSymbolArrayOf4<T extends JavascriptSymbol = Javascr
  * @see MutableJavascriptSymbolArrayOf5
  * @see MutableTypescriptSymbolArrayOf5
  */
-export type MutableJavascriptSymbolArrayOf5<T extends JavascriptSymbol = JavascriptSymbol, > = [T, T, T, T, T,]
+export type MutableJavascriptSymbolArrayOf5<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link Array MutableArray} of 6 official Javascript {@link Symbol}
  *
@@ -701,7 +701,7 @@ export type MutableJavascriptSymbolArrayOf5<T extends JavascriptSymbol = Javascr
  * @see MutableJavascriptSymbolArrayOf6
  * @see MutableTypescriptSymbolArrayOf6
  */
-export type MutableJavascriptSymbolArrayOf6<T extends JavascriptSymbol = JavascriptSymbol, > = [T, T, T, T, T, T,]
+export type MutableJavascriptSymbolArrayOf6<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link Array MutableArray} of 7 official Javascript {@link Symbol}
  *
@@ -711,7 +711,7 @@ export type MutableJavascriptSymbolArrayOf6<T extends JavascriptSymbol = Javascr
  * @see MutableJavascriptSymbolArrayOf7
  * @see MutableTypescriptSymbolArrayOf7
  */
-export type MutableJavascriptSymbolArrayOf7<T extends JavascriptSymbol = JavascriptSymbol, > = [T, T, T, T, T, T, T,]
+export type MutableJavascriptSymbolArrayOf7<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link Array MutableArray} of 8 official Javascript {@link Symbol}
  *
@@ -721,7 +721,7 @@ export type MutableJavascriptSymbolArrayOf7<T extends JavascriptSymbol = Javascr
  * @see MutableJavascriptSymbolArrayOf8
  * @see MutableTypescriptSymbolArrayOf8
  */
-export type MutableJavascriptSymbolArrayOf8<T extends JavascriptSymbol = JavascriptSymbol, > = [T, T, T, T, T, T, T, T,]
+export type MutableJavascriptSymbolArrayOf8<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link Array MutableArray} of 9 official Javascript {@link Symbol}
  *
@@ -731,7 +731,7 @@ export type MutableJavascriptSymbolArrayOf8<T extends JavascriptSymbol = Javascr
  * @see MutableJavascriptSymbolArrayOf9
  * @see MutableTypescriptSymbolArrayOf9
  */
-export type MutableJavascriptSymbolArrayOf9<T extends JavascriptSymbol = JavascriptSymbol, > = [T, T, T, T, T, T, T, T, T,]
+export type MutableJavascriptSymbolArrayOf9<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link Array MutableArray} of 10 official Javascript {@link Symbol}
  *
@@ -741,7 +741,7 @@ export type MutableJavascriptSymbolArrayOf9<T extends JavascriptSymbol = Javascr
  * @see MutableJavascriptSymbolArrayOf10
  * @see MutableTypescriptSymbolArrayOf10
  */
-export type MutableJavascriptSymbolArrayOf10<T extends JavascriptSymbol = JavascriptSymbol, > = [T, T, T, T, T, T, T, T, T, T,]
+export type MutableJavascriptSymbolArrayOf10<T extends JavascriptSymbol = JavascriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
 
 /**
  * A type-alias for an {@link Array MutableArray} of 1 official Typescript {@link Symbol}
@@ -762,7 +762,7 @@ export type MutableTypescriptSymbolArrayOf1<T extends TypescriptSymbol = Typescr
  * @see MutableTypescriptSymbolArrayOf2
  * @see MutableTypescriptSymbolArrayOf3
  */
-export type MutableTypescriptSymbolArrayOf2<T extends TypescriptSymbol = TypescriptSymbol, > = [T, T,]
+export type MutableTypescriptSymbolArrayOf2<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, > = [T1, T2,]
 /**
  * A type-alias for an {@link Array MutableArray} of 3 official Typescript {@link Symbol}
  *
@@ -772,7 +772,7 @@ export type MutableTypescriptSymbolArrayOf2<T extends TypescriptSymbol = Typescr
  * @see MutableTypescriptSymbolArrayOf3
  * @see MutableTypescriptSymbolArrayOf3
  */
-export type MutableTypescriptSymbolArrayOf3<T extends TypescriptSymbol = TypescriptSymbol, > = [T, T, T,]
+export type MutableTypescriptSymbolArrayOf3<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, > = [T1, T2, T3,]
 /**
  * A type-alias for an {@link Array MutableArray} of 4 official Typescript {@link Symbol}
  *
@@ -782,7 +782,7 @@ export type MutableTypescriptSymbolArrayOf3<T extends TypescriptSymbol = Typescr
  * @see MutableTypescriptSymbolArrayOf4
  * @see MutableTypescriptSymbolArrayOf4
  */
-export type MutableTypescriptSymbolArrayOf4<T extends TypescriptSymbol = TypescriptSymbol, > = [T, T, T, T,]
+export type MutableTypescriptSymbolArrayOf4<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, > = [T1, T2, T3, T4,]
 /**
  * A type-alias for an {@link Array MutableArray} of 5 official Typescript {@link Symbol}
  *
@@ -792,7 +792,7 @@ export type MutableTypescriptSymbolArrayOf4<T extends TypescriptSymbol = Typescr
  * @see MutableTypescriptSymbolArrayOf5
  * @see MutableTypescriptSymbolArrayOf5
  */
-export type MutableTypescriptSymbolArrayOf5<T extends TypescriptSymbol = TypescriptSymbol, > = [T, T, T, T, T,]
+export type MutableTypescriptSymbolArrayOf5<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, > = [T1, T2, T3, T4, T5,]
 /**
  * A type-alias for an {@link Array MutableArray} of 6 official Typescript {@link Symbol}
  *
@@ -802,7 +802,7 @@ export type MutableTypescriptSymbolArrayOf5<T extends TypescriptSymbol = Typescr
  * @see MutableTypescriptSymbolArrayOf6
  * @see MutableTypescriptSymbolArrayOf6
  */
-export type MutableTypescriptSymbolArrayOf6<T extends TypescriptSymbol = TypescriptSymbol, > = [T, T, T, T, T, T,]
+export type MutableTypescriptSymbolArrayOf6<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, > = [T1, T2, T3, T4, T5, T6,]
 /**
  * A type-alias for an {@link Array MutableArray} of 7 official Typescript {@link Symbol}
  *
@@ -812,7 +812,7 @@ export type MutableTypescriptSymbolArrayOf6<T extends TypescriptSymbol = Typescr
  * @see MutableTypescriptSymbolArrayOf7
  * @see MutableTypescriptSymbolArrayOf7
  */
-export type MutableTypescriptSymbolArrayOf7<T extends TypescriptSymbol = TypescriptSymbol, > = [T, T, T, T, T, T, T,]
+export type MutableTypescriptSymbolArrayOf7<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7,]
 /**
  * A type-alias for an {@link Array MutableArray} of 8 official Typescript {@link Symbol}
  *
@@ -822,7 +822,7 @@ export type MutableTypescriptSymbolArrayOf7<T extends TypescriptSymbol = Typescr
  * @see MutableTypescriptSymbolArrayOf8
  * @see MutableTypescriptSymbolArrayOf8
  */
-export type MutableTypescriptSymbolArrayOf8<T extends TypescriptSymbol = TypescriptSymbol, > = [T, T, T, T, T, T, T, T,]
+export type MutableTypescriptSymbolArrayOf8<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8,]
 /**
  * A type-alias for an {@link Array MutableArray} of 9 official Typescript {@link Symbol}
  *
@@ -832,7 +832,7 @@ export type MutableTypescriptSymbolArrayOf8<T extends TypescriptSymbol = Typescr
  * @see MutableTypescriptSymbolArrayOf9
  * @see MutableTypescriptSymbolArrayOf9
  */
-export type MutableTypescriptSymbolArrayOf9<T extends TypescriptSymbol = TypescriptSymbol, > = [T, T, T, T, T, T, T, T, T,]
+export type MutableTypescriptSymbolArrayOf9<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9,]
 /**
  * A type-alias for an {@link Array MutableArray} of 10 official Typescript {@link Symbol}
  *
@@ -842,4 +842,4 @@ export type MutableTypescriptSymbolArrayOf9<T extends TypescriptSymbol = Typescr
  * @see MutableTypescriptSymbolArrayOf10
  * @see MutableTypescriptSymbolArrayOf10
  */
-export type MutableTypescriptSymbolArrayOf10<T extends TypescriptSymbol = TypescriptSymbol, > = [T, T, T, T, T, T, T, T, T, T,]
+export type MutableTypescriptSymbolArrayOf10<T extends TypescriptSymbol = TypescriptSymbol, T1 extends T = T, T2 extends T = T, T3 extends T = T, T4 extends T = T, T5 extends T = T, T6 extends T = T, T7 extends T = T, T8 extends T = T, T9 extends T = T, T10 extends T = T, > = [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10,]
