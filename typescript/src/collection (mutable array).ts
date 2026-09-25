@@ -28,7 +28,7 @@ import type {JavascriptSymbol, TypescriptSymbol} from "./symbol"
  * @see import('collection (mutable array of)').MutableBooleanArrayOf9
  * @see import('collection (mutable array of)').MutableBooleanArrayOf10
  */
-export type MutableBooleanArray<T extends boolean = boolean, > = readonly T[]
+export type MutableBooleanArray<T extends boolean = boolean, > = T[]
 
 /**
  * A type-alias for an {@link Array MutableArray} of {@link Number} or {@link BigInt}
@@ -47,7 +47,7 @@ export type MutableBooleanArray<T extends boolean = boolean, > = readonly T[]
  * @see MutableNumberArray
  * @see MutableBigIntArray
  */
-export type MutableNumericArray<T extends Numeric = Numeric, > = readonly T[]
+export type MutableNumericArray<T extends Numeric = Numeric, > = T[]
 /**
  * A type-alias for an {@link Array MutableArray} of {@link Number}
  *
@@ -64,7 +64,7 @@ export type MutableNumericArray<T extends Numeric = Numeric, > = readonly T[]
  * @see import('collection (mutable array of)').MutableNumberArrayOf10
  * @see MutableNumericArray
  */
-export type MutableNumberArray<T extends number = number, > = readonly T[]
+export type MutableNumberArray<T extends number = number, > = T[]
 /**
  * A type-alias for an {@link Array MutableArray} of {@link BigInt}
  *
@@ -81,7 +81,7 @@ export type MutableNumberArray<T extends number = number, > = readonly T[]
  * @see import('collection (mutable array of)').MutableBigIntArrayOf10
  * @see MutableNumericArray
  */
-export type MutableBigIntArray<T extends bigint = bigint, > = readonly T[]
+export type MutableBigIntArray<T extends bigint = bigint, > = T[]
 
 /**
  * A type-alias for an {@link Array MutableArray} of {@link String}
@@ -98,7 +98,7 @@ export type MutableBigIntArray<T extends bigint = bigint, > = readonly T[]
  * @see import('collection (mutable array of)').MutableStringArrayOf9
  * @see import('collection (mutable array of)').MutableStringArrayOf10
  */
-export type MutableStringArray<T extends string = string, > = readonly T[]
+export type MutableStringArray<T extends string = string, > = T[]
 
 /**
  * A type-alias for an {@link Array MutableArray} of {@link Symbol}
@@ -117,7 +117,7 @@ export type MutableStringArray<T extends string = string, > = readonly T[]
  * @see MutableJavascriptSymbolArray
  * @see MutableTypescriptSymbolArray
  */
-export type MutableSymbolArray<T extends symbol = symbol, > = readonly T[]
+export type MutableSymbolArray<T extends symbol = symbol, > = T[]
 /**
  * A type-alias for an {@link Array MutableArray} of the official Javascript {@link Symbol}
  *
@@ -134,7 +134,7 @@ export type MutableSymbolArray<T extends symbol = symbol, > = readonly T[]
  * @see import('collection (mutable array of)').MutableJavascriptSymbolArrayOf10
  * @see MutableSymbolArray
  */
-export type MutableJavascriptSymbolArray<T extends JavascriptSymbol = JavascriptSymbol, > = readonly T[]
+export type MutableJavascriptSymbolArray<T extends JavascriptSymbol = JavascriptSymbol, > = T[]
 /**
  * A type-alias for an {@link Array MutableArray} of the official Typescript {@link Symbol}
  *
@@ -151,5 +151,5 @@ export type MutableJavascriptSymbolArray<T extends JavascriptSymbol = Javascript
  * @see import('collection (mutable array of)').MutableTypescriptSymbolArrayOf10
  * @see MutableSymbolArray
  */
-export type MutableTypescriptSymbolArray<T extends TypescriptSymbol = TypescriptSymbol, > = readonly T[]
+export type MutableTypescriptSymbolArray<T extends TypescriptSymbol = TypescriptSymbol, > = T[]
 
