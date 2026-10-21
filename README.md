@@ -39,6 +39,7 @@ You can contribute to my projects in 2 different ways
 
 | TS               | Date               | Quick note                                                                                                                                        |
 |------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| [1.3.0][ts-v1.3] | October 21st, 2026 | Upgrade on the TypeScript (v5 → v7)<br/>New arrays of 1 to 10                                                                                                             |
 | 1.2.2            | Febuary 24th, 2025 | 2026 update                                                                                                                                       |
 | 1.2.1            | August 12th, 2025  | A small update of the dependencies                                                                                                                |
 | [1.2.0][ts-v1.2] | January 8th, 2025  | 2025 update,<br/>New collections declaration (WeakSet, WeakMap),<br/>Change to use `never` on the empty collections by default                    |
@@ -50,5 +51,6 @@ You can contribute to my projects in 2 different ways
 [ts-v1.0]: https://github.com/joooKiwi/type/releases/tag/v1.0.0-ts
 [ts-v1.1]: https://github.com/joooKiwi/type/releases/tag/v1.1.0-ts
 [ts-v1.2]: https://github.com/joooKiwi/type/releases/tag/v1.2.2-ts
+[ts-v1.3]: https://github.com/joooKiwi/type/releases/tag/v1.3.0-ts
 
 <!-- Version references -->
