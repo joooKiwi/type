@@ -54,6 +54,11 @@ jobs:
           registry-url: https://registry.npmjs.org
           package-manager-cache: false
 
+      - name: Ensure npm supports OIDC trusted publishing
+        run: |
+          npm install npm@^11.5.1
+          npm --version
+
       - name: Installation of the dependencies (for NPM)
         run: npm --prefix ${{matrix.path}} ci
 
