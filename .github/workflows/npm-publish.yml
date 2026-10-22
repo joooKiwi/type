@@ -48,7 +48,7 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: ${{matrix.node-version}}
-          registry-url: https://registry.npmjs.org
+          registry-url: "https://registry.npmjs.org"
           package-manager-cache: false
 
       - name: Installation of the dependencies (for NPM)
