@@ -39,6 +39,11 @@ jobs:
       matrix:
         node-version: [26.x]
         path: [./typescript/]
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
 
     steps:
       - name: Checkout of the repository
