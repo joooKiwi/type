@@ -40,6 +40,7 @@ jobs:
         node-version: [26.x]
         path: [./typescript/]
     permissions:
+      contents: read
       id-token: write
 
     steps:
